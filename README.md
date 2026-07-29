@@ -1,3 +1,8 @@
+https://docs.google.com/presentation/d/1L8pou0N01JuyPdbSYf1I3-ujAXSCGqCC/edit?usp=sharing&ouid=105199836956326264493&rtpof=true&sd=true
+
+<img width="869" height="490" alt="Screenshot 2026-07-29 at 11 53 09 PM" src="https://github.com/user-attachments/assets/0f1f6197-331e-400a-9653-9b69b9d9e8cc" />
+
+
 你的三個實驗最適合被組織成一條**從個體層次、設計探索，到雙人互動驗證**的研究故事線，而不是三個彼此平行、各自回答不同問題的獨立實驗。
 
 核心邏輯可以是：
