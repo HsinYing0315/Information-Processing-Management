@@ -165,20 +165,7 @@ Here goes the abstract.
 % Main text
 \section{Introduction}\label{sec:introduction}
 
-
-% \begin{table}%[]
-% \caption{}\label{tbl1}
-% \begin{tabular*}{\tblwidth}{@{}LL@{}}
-% \toprule
-%   &  \\ % Table header row
-% \midrule
-%  & \\
-%  & \\
-%  & \\
-%  & \\
-% \bottomrule
-% \end{tabular*}
-% \end{table}
+This study investigates how the effects of AI NPC personality extend from individual interaction to dyadic collaboration, and how NPC personality and pair familiarity jointly influence users’ perceptions of the AI, reliance on the AI, and collaborative engagement in dyadic settings.
 
 %% The Appendices part is started with the command \appendix;
 %% appendix sections are then done as normal sections
@@ -201,11 +188,46 @@ Among the five personality traits, Extraversion has been evaluated as the most a
 
 \subsection{team structure (acquainted vs. unacquainted pairs) in HAI}
 
-
 \section{Lab Experiment: Single User}\label{sec:lab}
+
+This study uses a within-subjects MR tour experiment to examine the effects of introverted and extroverted NPCs on multiple dependent variables, enabling a comparative evaluation while minimizing individual differences.
+
+\subsection{Method}
+
+Participants first completed the BFI-2 personality test and were classified as introverts (scores $\leq 36$) or extroverts (scores $>36$). Sixteen participants, with eight participants in each group and ages ranging from 20 to 30 years, were recruited for the study. Manipulation checks conducted during the pilot test confirmed that the two AI NPCs exhibited significantly different perceived personalities. The extroverted AI NPC was described as `enthusiastic` and `energetic`, whereas the introverted AI NPC was described as `calm` and `disciplined`.
+
+After receiving a study briefing and reviewing example questions, participants were randomly assigned to one of two interaction orders. Each participant wore a HoloLens mixed-reality headset and interacted with both AI NPCs for up to eight minutes per NPC. Each interaction session began with a self-introduction by the NPC, followed by two predefined questions.
+
+After interacting with both NPCs, participants completed a knowledge task designed to ensure sufficient engagement with the study content. Participants who scored below 80\% were excluded from the analysis. The study concluded with a post-experiment questionnaire and a short interview. The complete procedure lasted approximately 35--40 minutes.
+
+\subsection{Questionnaire}
+Before interacting with the AIMR system, participants' levels of extraversion were assessed using the BFI-2 pre-test questionnaire. The resulting extraversion scores served as a key variable for testing the similarity-attraction effect proposed in Hypothesis~4. To capture participants' perceptions and experiences, subjective data were collected through post-experiment questionnaires using a five-point Likert scale. The questionnaire measured social presence (SP), purchase intention (PI), continuance intention to use (ITU), and satisfaction (SAT).
+
+Social presence was measured using five items adapted from Gefen and Straub~\cite{GefenStraub2004}, which demonstrated satisfactory reliability and convergent validity ($\mathrm{CR}=0.919$, $\sqrt{\mathrm{AVE}}=0.836$). These subjective evaluations were complemented by objective measures, including eye-tracking data and interaction frequency. Purchase intention was measured using items adapted from Barta et al.~\cite{Bartaetal2023} (Cronbach's $\alpha=0.958$, $\rho_{c}=0.973$, $\mathrm{AVE}=0.922$). Continuance intention to use was measured using items adapted from Li and Wang~\cite{LiWang2023} (Cronbach's $\alpha=0.93$, $\mathrm{AVE}=0.78$, $\mathrm{CR}=0.94$). Satisfaction was assessed using items adapted from Shi et al.~\cite{Shietal2023} ($\mathrm{CR}=0.910$, $\mathrm{AVE}=0.717$). These reported values indicate strong reliability and convergent validity across the measured constructs.
+
+The questionnaire also included open-ended questions to enrich the qualitative findings and capture participants' perceptions of social presence, continuance intention to use, purchase intention, and visual attention. For social presence, participants identified which NPC conveyed a stronger sense of ``being there'' and explained the reasons for their choice. For continuance intention to use, they described why they would prefer to interact with a particular AI NPC in the future. For purchase intention, they indicated whether the interaction increased their motivation to purchase museum souvenirs and explained why. Regarding visual attention, participants described moments in which an AI NPC's remarks prompted them to examine an exhibit more closely.
+
+\subsection{Behavioral}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{figs/5.png}
+    \caption{Caption}
+    \label{fig:5}
+\end{figure}
+
+The physical layout of the study environment is presented in Figure \ref{fig:5}. To examine the impact of AI NPC personality traits on participant responses, this study employed both subjective (questionnaire) and objective (behavioral) measures. Objective data were collected through observation and MR device recordings, focusing on behavioral indicators linked to social presence (Biocca, 2003), which included (1) the number of AI– participant interactions, recorded by counting verbal and preset-prompt questions, and (2) eye-tracking metrics, which captured fixation counts and durations directed at three predefined Areas of Interest (AOIs): the AI NPC, physical exhibits, and virtual exhibits (Figure 6). Eye-tracking data enabled calculation of total gaze duration and engagement distribution across AOIs, providing a behavioral basis for assessing social presence.
+
+\subsubsection{Result}
+
+To investigate whether AI NPC personality influences perceived social presence (SP) in the MR tour, both objective data and subjective questionnaire responses were analyzed. Normality tests indicated that SP scores were approximately normal (p = 0.0942), but the small sample size (N = 16) limited parametric robustness. ITU, PI, and SAT scores were non-normal (p < 0.05). To ensure statistical validity, the Wilcoxon signed-rank test was used for all constructs. Given that over 10\% of scores were tied, two additional non-parametric methods—sign and permutation tests—were applied. All methods showed significant differences in SP between AI NPC personalities (p < .001), with extroverted AI receiving higher ratings (see Table 3 and Figure 7). These findings support H2a: Extroverted AI NPCs elicit higher levels of self-reported social presence compared to introverted AI NPCs.
+
+\subsubsection{Discussioin}
+
 
 
 \section{Pair}\label{sec:pair}
+
+The formal study with single user examined how NPC personality shaped individual users’ perceptions and evaluations in an MR museum experience. However, museum visits are often social, and the presence of a partner may alter how users attend to and interact with the AI. Therefore, we conducted a dyadic pilot study to explore human–human–AI interaction and to inform the subsequent formal study.
 
 \subsection{Pilot Study}
 We conducted a pilot study at the Yang Ming Oceanic Culture \& Art Museum in Keelung, Taiwan, to explore how AI NPCs may shape collaborative interaction in a shared MR museum context. The study involved three acquainted pairs, resulting in a total of six participants. Using Microsoft HoloLens 2, each pair experienced a co-located MR museum environment in which they could interact with physical artifacts, virtual exhibit content, and two exhibit-specific AI NPC guides. 
@@ -237,25 +259,53 @@ To support this collaborative structure, we further constrained the NPCs’ task
 \subsubsection{Findings}
 
 \begin{table}[htbp]
-\centering
 \caption{Participant demographics and extraversion characteristics}
-\label{tab:participant_demographics}
-\begin{tabular}{lccc}
+\label{tbl:participant_demographics}
+\begin{tabular*}{\tblwidth}{@{\extracolsep{\fill}}lccc@{}}
 \toprule
- & \textbf{Overall} & \textbf{Introvert users} & \textbf{Extrovert users} \\
+ & \textbf{Overall}
+ & \textbf{Introvert users}
+ & \textbf{Extrovert users} \\
 \midrule
-N                       & 6           & 2            & 4           \\
-Male, n (\%)            & 5 (83\%)    & 2 (100\%)    & 3 (75\%)    \\
-Female, n (\%)          & 1 (17\%)    & 0 (0\%)      & 1 (25\%)    \\
-Age, M (SD)             & 23.5 (0.5)  & 23.5 (0.7)   & 23.5 (0.6)  \\
-Age, range              & 23--24      & 23--24       & 23--24      \\
-Extraversion, M (SD)    & 3.32 (0.66) & 2.55 (0.13)  & 3.70 (0.37) \\
-Extraversion, range     & 2.45--4.00  & 2.45--2.64   & 3.18--4.00  \\
+\textit{N}
+    & 6
+    & 2
+    & 4 \\
+
+Male, \textit{n} (\%)
+    & 5 (83\%)
+    & 2 (100\%)
+    & 3 (75\%) \\
+
+Female, \textit{n} (\%)
+    & 1 (17\%)
+    & 0 (0\%)
+    & 1 (25\%) \\
+
+Age, \textit{M} (\textit{SD})
+    & 23.5 (0.5)
+    & 23.5 (0.7)
+    & 23.5 (0.6) \\
+
+Age, range
+    & 23--24
+    & 23--24
+    & 23--24 \\
+
+Extraversion, \textit{M} (\textit{SD})
+    & 3.32 (0.66)
+    & 2.55 (0.13)
+    & 3.70 (0.37) \\
+
+Extraversion, range
+    & 2.45--4.00
+    & 2.45--2.64
+    & 3.18--4.00 \\
 \bottomrule
-\end{tabular}
+\end{tabular*}
 \end{table}
 
-The demographic information is shown in \ref{tab:participant_demographics}. The pilot study included six participants: five males and one female. Participants were between 23 and 24 years old, with a mean age of 23.5 years (SD = 0.5). Based on self-reported extraversion scores, two participants were categorized as introvert users and four as extrovert users. The introvert users had lower extraversion scores (M = 2.55, SD = 0.13) than the extrovert users (M = 3.70, SD = 0.37), providing a descriptive basis for exploring how users with different trait extraversion levels responded to the AI NPCs.
+The demographic information is shown in Table \ref{tbl:participant_demographics}. The pilot study included six participants: five males and one female. Participants were between 23 and 24 years old, with a mean age of 23.5 years (SD = 0.5). Based on self-reported extraversion scores, two participants were categorized as introvert users and four as extrovert users. The introvert users had lower extraversion scores (M = 2.55, SD = 0.13) than the extrovert users (M = 3.70, SD = 0.37), providing a descriptive basis for exploring how users with different trait extraversion levels responded to the AI NPCs.
 
 \subsubsection{Limitations}
 
@@ -280,7 +330,34 @@ Instead of only providing indirect hints, the NPCs were allowed to offer more sc
 
 \subsection{Experiment}
 
+Building on the findings and design iterations from the pilot study, Study 3 conducted a formal evaluation of the dyadic MR experience with a larger sample of familiar and unfamiliar pairs. The study examined how NPC personality and pair familiarity shaped users’ perceptions of the AI, reliance on the NPCs, and collaborative engagement.
 
+
+\subsection{Cross-Study Analysis}
+
+To further comparing the collected data between single user and pair users, we seperate them into three group: single/acquainted pair/unacquainted pair. And we compared their Social Presence(SP), Intention to Use(ITU), and Satisfaction(SAT).
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{figs/output.png}
+    \caption{Boxplots of Average User Ratings for Introverted vs. Extroverted AI NPCs on SP, ITU, and SAT Constructs}
+    \label{fig:boxplots}
+\end{figure}
+
+From figure \ref{fig:boxplots}, we can tell that overall, participants in the Single User condition exhibited a more pronounced advantage for the extroverted NPC in terms of social presence (SP) and intention to use (ITU). In contrast, the differences observed in the Familiar Pair and Unfamiliar Pair conditions were smaller and less consistent. This pattern suggests that when users interact with an NPC alongside another participant rather than individually, the influence of NPC personality on subjective evaluations may be attenuated by the presence of a human partner.
+
+Because the Single User study employed a 5-point Likert scale, whereas the pair-based studies employed a 7-point Likert scale, all questionnaire responses were normalized to a common 0–1 scale for the subsequent analyses.
+
+To further examine whether the effects differed statistically across the three interaction conditions, a difference score was calculated for each participant and construct by subtracting the rating of the introverted NPC from that of the extroverted NPC. A positive score therefore indicated a relative preference for the extroverted NPC, whereas a negative score indicated a relative preference for the introverted NPC.
+
+Kruskal–Wallis tests were then conducted to compare the distributions of the difference scores across the Single User, Familiar Pair, and Unfamiliar Pair conditions. The results revealed a significant between-condition difference in the SP difference scores, indicating that the relative effect of the extroverted NPC, compared with the introverted NPC, on perceived social presence varied across interaction conditions.
+
+By contrast, the Kruskal–Wallis tests for ITU and satisfaction (SAT) were not statistically significant. Thus, there was insufficient evidence to conclude that the relative advantage of the extroverted NPC in terms of intention to use or satisfaction differed across the three interaction conditions.
+
+
+\subsubsection{Behavioral Result}
+
+\subsubsection{Similarity Attraction Effect}
 
 \section{General discussions}\label{sec:general}
 
