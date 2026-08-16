@@ -2,7 +2,7 @@
 %% Copyright 2019-2024 Elsevier Ltd
 %% 
 %% This file is part of the 'CAS Bundle'.
-%% --------------------------------------
+%% -------------------
 %% 
 %% It may be distributed under the conditions of the LaTeX Project Public
 %% License, either version 1.3c of this license or (at your option) any
@@ -171,9 +171,9 @@ This study investigates how the effects of AI NPC personality extend from indivi
 \begin{itemize}
     \item \textbf{RQ1.} How does AI NPC personality influence users’ perceptions and interaction behaviors in an individual MR museum experience?
     \item \textbf{RQ2.} To what extent does personality similarity between users and AI NPCs shape users’ evaluations of the NPC?
-    \item \textbf{RQ3.} How does pair acquaintance shape users’ reliance on AI NPCs in a collaborative MR experience?
-    \item \textbf{RQ4.} To what extent does AI NPC personality influence collaborative engagement in dyadic interaction?
-    \item \textbf{RQ5.} Does pair acquaintance moderate the effect of AI NPC personality on collaborative engagement?
+    \item \textbf{RQ3.} How does AI NPC personality influence users' subjective evaluations and visual-attention behavior in a collaborative dyadic MR experience? 
+    \item \textbf{RQ4.} How do personality-related responses to AI NPCs differ between acquainted and unacquainted pairs?
+    \item \textbf{RQ5.} To what extent does personality similarity between users and AI NPCs shape users' evaluations and visual-attention behavior across pair acquaintance conditions?
 \end{itemize}
 
 %% The Appendices part is started with the command \appendix;
@@ -183,29 +183,23 @@ This study investigates how the effects of AI NPC personality extend from indivi
 \section{Related Work}\label{sec:related-work}
 
 \subsection{AIMR in museum contexts}
-Museums serve both entertainment and educational functions. 
-Due to the specialty of MR, museum can provide a more immersive experience and shorten the distance between visitors and artifacts. On the other hand, AI can 
+% Museums serve both entertainment and educational functions. 
+% Due to the specialty of MR, museum can provide a more immersive experience and shorten the distance between visitors and artifacts. On the other hand, AI can 
 
-XXX shows that Guide can , while XXX shows that AI . Highlighting that AI.
+% XXX shows that Guide can , while XXX shows that AI . Highlighting that AI.
 
 \subsection{personality traits via LLM}
-There is research showing that CAs with personality design can enhance social presence \citep{Ahmadetal2021}.
+% There is research showing that CAs with personality design can enhance social presence \citep{Ahmadetal2021}.
 
-Under this research trend, the Big Five Personality Model proposed by Oliver P. \cite{John1991} is the most widely adopted framework in contemporary psychology. There are five traits, and extraverison. Each represents and used to evaluate.
+% Under this research trend, the Big Five Personality Model proposed by Oliver P. \cite{John1991} is the most widely adopted framework in contemporary psychology. There are five traits, and extraverison. Each represents and used to evaluate.
 
-Among the five personality traits, Extraversion has been evaluated as the most affected personality dimension for several reasons \citep{GillOberlander2019}.
+% Among the five personality traits, Extraversion has been evaluated as the most affected personality dimension for several reasons \citep{GillOberlander2019}.
 
 \subsection{team structure (acquainted vs. unacquainted pairs) in HAI}
 
 \section{Lab Experiment: Single User}\label{sec:lab}
 
-This study uses a within-subjects MR tour experiment to examine the effects of introverted and extroverted NPCs on multiple dependent variables, enabling a comparative evaluation while minimizing individual differences.
-
-Accordingly, this study addressed the following research questions: 
-\begin{itemize}
-    \item \textbf{RQ1.} How does AI NPC personality influence users' perceptions and interaction behaviors in an individual MR museum experience?
-    \item \textbf{RQ2.} To what extent does personality similarity between users and AI NPCs shape users' evaluations of the NPC?
-\end{itemize}
+The first study investigated how AI NPC personality shaped users' experiences in a single-user MR museum setting. Using a within-subjects MR tour experiment, participants interacted with both introverted and extroverted AI NPCs, allowing us to examine personality-related differences in subjective perceptions, interaction behaviors, and visual attention, as well as the role of user-NPC personality similarity.
 
 \subsection{Participants}
 
@@ -217,22 +211,21 @@ The study adopted a within-subject design in which each participant interacted w
 
 Before the experiment, participants received an overview of the study procedure and reviewed several example questions that could be asked during the interaction. They then wore a Microsoft HoloLens 2 MR headset and interacted with each AI NPC for up to eight minutes. Each interaction began with a self-introduction by the NPC, followed by two predefined questions designed to initiate the conversation.
 
-After completing both interaction sessions, participants undertook a knowledge task to assess whether they had sufficiently engaged with the exhibit content. Participants who scored below 80\% were excluded from the analysis. They subsequently completed a post-experiment questionnaire and participated in a short semi-structured interview. The entire study lasted approximately 35--40 minutes.
+After completing both interaction sessions, participants undertook a knowledge task to assess whether they had sufficiently engaged with the exhibit content. Participants who scored below 80\% were excluded from the analysis. They subsequently completed a post-experiment questionnaire and participated in a short semi-structured interview. The entire study lasted approximately 35-40 minutes.
 
 \subsection{Measures}
+
 \subsubsection{Subjective Measures}
 
-Participants' perceptions of the two AI NPCs were assessed using post-interaction questionnaires administered on a five-point Likert scale. The measured constructs included social presence (SP), continuance intention to use (ITU), and satisfaction (SAT).
+To capture participants' subjective perceptions and evaluations of the AI NPCs, post-interaction questionnaires were administered using a five-point Likert scale. The measured constructs included social presence (SP), continuance intention to use (ITU), and satisfaction (SAT), which were used to address the perceptual dimension of RQ1. Participants' extraversion, assessed using the BFI-2 before the experiment, was additionally used in the similarity-attraction analysis for RQ2.
 
-Social presence was measured using five items adapted from Gefen and Straub~\cite{GefenStraub2004}. The original scale demonstrated satisfactory reliability and convergent validity, with a composite reliability of $\mathrm{CR}=0.919$ and $\sqrt{\mathrm{AVE}}=0.836$. Continuance intention to use was measured using items adapted from Li and Wang~\cite{LiWang2023} ($\alpha=0.93$, $\mathrm{CR}=0.94$, and $\mathrm{AVE}=0.78$). Satisfaction was assessed using items adapted from Shi et al.~\cite{Shietal2023} ($\mathrm{CR}=0.910$ and $\mathrm{AVE}=0.717$).
+Social presence was measured using five items adapted from~\cite{gefenConsumerTrustB2C2004}, with satisfactory reliability and convergent validity reported in the original scale ($\mathrm{CR}=0.919$, $\sqrt{\mathrm{AVE}}=0.836$). Continuance intention to use was measured using items adapted from~\cite{liChatbotsEcommerceEffect2023} ($\alpha=0.93$, $\mathrm{CR}=0.94$, $\mathrm{AVE}=0.78$), and satisfaction was assessed using items adapted from Shi et al.~\cite{Shietal2023} ($\mathrm{CR}=0.910$, $\mathrm{AVE}=0.717$).
 
 \subsubsection{Behavioral Measures}
 
-In addition to the subjective measures, behavioral data were collected through system logs, direct observation, and eye-tracking recordings from the MR headset. These measures were included to examine whether the personalities of the AI NPCs influenced participants' observable interaction and visual-attention patterns.
+Behavioral measures were collected through system logs, direct observation, and eye-tracking recordings to address the interaction-behavior dimension of RQ1. Interaction frequency was operationalized as the number of participant-NPC interactions, including verbal questions and selections of predefined prompts. Visual attention was assessed using fixation counts and durations across three predefined Areas of Interest (AOIs): the AI NPC, the physical exhibit, and the virtual exhibit. These measures were used to derive total gaze duration, fixation frequency, and the distribution of visual attention across AOIs.
 
-Interaction frequency was operationalized as the number of participant--NPC interactions, including both verbal questions and selections of predefined prompts. Visual attention was measured using fixation counts and fixation durations across three predefined Areas of Interest (AOIs): the AI NPC, the physical exhibit, and the virtual exhibit. These data were used to calculate the total gaze duration and the distribution of visual attention across the three AOIs.
-
-The spatial arrangement of the experimental environment and the locations of the corresponding AOIs are illustrated in Figure~\ref{fig:5}.
+The spatial arrangement of the experimental environment and the corresponding AOIs are illustrated in Figure~\ref{fig:5}.
 
 \begin{figure}
 \centering
@@ -241,14 +234,13 @@ The spatial arrangement of the experimental environment and the locations of the
 \label{fig:5}
 \end{figure}
 
-\subsection{Result}
+\subsection{Results}
 
-To examine how AI NPC personality affected participants' experiences in the MR tour, both subjective questionnaire responses and objective behavioral data were analyzed. The subjective analysis focused on participants' evaluations of the introverted and extroverted
-AI NPCs across social presence (SP), intention to use (ITU), and satisfaction (SAT). The objective analysis examined interaction logs and eye-tracking measures, including the number of questions asked, gaze duration, fixation counts, and average fixation duration. In addition, participant personality was considered to explore whether personality similarity influenced subjective evaluations and visual attention patterns.
+The results are organized around the two research questions. RQ1 was examined using participants' subjective evaluations, interaction frequency, and eye-tracking measures, whereas RQ2 was addressed through the similarity–attraction analysis based on participant personality and responses to the two AI NPCs.
 
 \subsubsection{Subjective Data Result}
 
-To address RQ1, we first examined whether NPC personality influenced participants' subjective evaluations of the two AI NPCs, whose distributions are shown in Figure~\ref{fig:single-rate}. Shapiro–Wilk tests were conducted on the within-participant difference scores between the extroverted and introverted NPC conditions. The difference scores for SP did not significantly deviate from normality (p = .0942), whereas those for ITU, and SAT violated the normality assumption (p < .05). Given the small sample size (N = 16) and the non-normal distributions observed for several constructs, Wilcoxon signed-rank tests were used consistently for all within-subject comparisons. Because tied difference scores were present in more than 10\% of the observations, sign tests and paired permutation tests were additionally conducted as robustness checks. All three methods yielded consistent results for SP, showing significantly higher social presence ratings for the extroverted than the introverted AI NPC (p < .001; Table~\ref{tab:single_user_results}).
+To address RQ1, we examined whether NPC personality influenced participants' subjective evaluations of social presence (SP), intention to use (ITU), and satisfaction (SAT). As illustrated in Figure~\ref{fig:single-rate}, ratings were generally higher for the extroverted NPC across all three constructs, with the largest difference observed for SP. Shapiro-Wilk tests indicated that the difference scores for ITU and SAT deviated from normality ($p<.05$), while SP did not ($p=.0942$). Given the small sample size ($N=16$) and the non-normality observed for multiple constructs, Wilcoxon signed-rank tests were used for all within-subject comparisons. As shown in Table~\ref{tab:single_user_results}, ratings for the extroverted NPC were significantly higher than those for the introverted NPC across SP ($W=0.0$, $p<.001$, $r=.68$), ITU ($W=9.5$, $p=.007$, $r=.63$), and SAT ($W=0.0$, $p=.015$, $r=.70$). Because tied difference scores were present in more than 10\% of the observations, sign tests and paired permutation tests were additionally conducted as robustness checks, yielding the same overall pattern of significance. Taken together, the results show significant differences between the two NPC personality conditions across SP, ITU, and SAT, with higher ratings observed for the extroverted AI NPC.
 
 \begin{figure}
     \centering
@@ -315,9 +307,16 @@ Cohen's $d$
 
 \subsubsection{Objective Data Result}
 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{figs/single-gaze.png}
+    \caption{Gaze Duration and Frequency Distribution Across 3 Types of  AOIs: AI NPCs, Physical Artifacts, and Virtual Artifacts ($N=16$)}
+    \label{fig:single-gaze}
+\end{figure}
+
 To further address RQ1, we examined whether NPC personality was reflected in participants' interaction frequency and visual-attention behavior. Analysis of participants’ interaction logs showed that participants asked an average of 3.8 questions to the introverted AI (SD = 1.34) and 4.4 questions to the extroverted AI (SD = 1.25). However, the difference in the number of questions asked between the two AI NPC personalities was not statistically significant ($p > .05$).
 
-In addition, gaze analysis showed that the AI NPCs received the highest proportion of gaze duration and fixation counts, followed by the virtual and physical exhibits. Wilcoxon signed-rank tests further indicated that participants exhibited significantly greater total gaze duration ($p = .018$) and fixation counts ($p = .017$) toward the extroverted AI than toward the introverted AI. In contrast, the introverted AI elicited significantly longer average fixation durations (Introvert: 6.97 s; Extrovert: 5.82 s; $p = .025$), as shown in Figure~\ref{fig:gaze-duration}, suggesting that individual fixations on the introverted AI tended to be more sustained. Taken together, these findings provide partial evidence that the extroverted AI attracted greater overall visual attention, as reflected by longer total gaze duration and more frequent fixations, while individual fixations were longer for the introverted AI.
+In addition, Figure~\ref{fig:single-gaze} showed that the AI NPCs received the highest proportion of gaze duration and fixation counts, followed by the virtual and physical exhibits. Wilcoxon signed-rank tests further indicated that participants exhibited significantly greater total gaze duration ($p = .018$) and fixation counts ($p = .017$) toward the extroverted AI than toward the introverted AI. In contrast, the introverted AI elicited significantly longer average fixation durations (Introvert: 6.97 s; Extrovert: 5.82 s; $p = .025$), as shown in Figure~\ref{fig:gaze-duration}, suggesting that individual fixations on the introverted AI tended to be more sustained. Taken together, these findings suggest that AI NPC personality influenced participants' visual-attention behavior in the single-user MR experience, but in different ways across gaze measures: the extroverted AI attracted greater overall attention, whereas gaze toward the introverted AI tended to be sustained for longer periods.
 
 \begin{figure}
     \centering
@@ -328,7 +327,7 @@ In addition, gaze analysis showed that the AI NPCs received the highest proporti
 
 \subsubsection{Similarity Attraction}
 
-To address RQ2 and assess whether personality similarity influenced participants’ evaluations of the AI NPCs, Mann–Whitney U tests were conducted across participant personality groups. Extroverted participants consistently showed positive similarity scores, indicating a preference for the personality-matched extroverted AI across social presence, intention to use, and satisfaction. In contrast, introverted participants showed negative similarity scores, suggesting either a preference for the dissimilar extroverted AI or no clear similarity-based preference. The preference for the extroverted AI was significantly stronger among extroverted participants than among introverted participants across all constructs ($p < .05$; Table~\ref{tab:attraction_test}). These findings therefore provide partial evidence for a similarity--attraction pattern, with the similarity–attraction effect emerging primarily among extroverted participants.
+To address RQ2 and assess whether personality similarity influenced participants’ evaluations of the AI NPCs, Mann–Whitney U tests were conducted across participant personality groups. Extroverted participants consistently showed positive similarity scores, indicating a preference for the personality-matched extroverted AI across social presence, intention to use, and satisfaction. In contrast, introverted participants showed negative similarity scores, suggesting either a preference for the dissimilar extroverted AI or no clear similarity-based preference. The preference for the extroverted AI was significantly stronger among extroverted participants than among introverted participants across all constructs ($p < .05$; Table~\ref{tab:attraction_test}). These findings therefore provide partial evidence for a similarity-attraction pattern, with the similarity–attraction effect emerging primarily among extroverted participants.
 
 Consistent with these subjective evaluations, the eye-tracking results provide behavioral, yet conditional, support for the similarity–attraction hypothesis. Extroverted participants showed positive mean differences in gaze count (+35.88) and gaze duration (+11.86 ms), indicating greater visual attention toward the personality-matched extroverted AI. In contrast, introverted participants exhibited negative differences, directing more visual attention toward the personality-dissimilar extroverted AI. Mann–Whitney U tests further revealed significant between-group differences in both gaze duration ($U = 11.0$, $p < .05$, $r = .55$) and gaze count ($U = 9.0$, $p < .05$, $r = .60$). Taken together, these findings suggest that participant personality significantly shaped gaze allocation, while the similarity–attraction effect was observed more consistently among extroverted than introverted participants.
 
@@ -350,8 +349,8 @@ Extroverts' SD             & 0.7555  & 0.8763  & 0.6400  \\
 Extroverts' Minimum        & 0.0000  & 0.0000  & 0.0000  \\
 Extroverts' Maximum        & 2.2000  & 2.5000  & 1.5000  \\
 \midrule
-Mann--Whitney $U$          & 1.0000  & 8.0000  & 12.0000 \\
-Mann--Whitney $p$          & \textbf{0.0013}$^{**}$
+Mann-Whitney $U$          & 1.0000  & 8.0000  & 12.0000 \\
+Mann-Whitney $p$          & \textbf{0.0013}$^{**}$
                            & \textbf{0.0121}$^{*}$
                            & \textbf{0.0186}$^{*}$ \\
 Effect size ($r$)          & 0.6139  & 0.6301  & 0.5251  \\
@@ -369,19 +368,19 @@ Effect size ($r$)          & 0.6139  & 0.6301  & 0.5251  \\
 
 \subsection{Discussion}
 
-This study showed that AI NPC personality meaningfully shaped users' experiences in individual MR interaction, but its effects were not consistent across all outcome measures. The extroverted NPC elicited significantly higher perceived social presence and intention to use, and also attracted greater overall visual attention in terms of total gaze duration and gaze count. In contrast, the introverted NPC elicited longer average gaze durations, suggesting a different pattern of sustained visual attention. Together, these findings indicate that socially expressive personality cues can enhance users' subjective perceptions of an AI NPC, while their behavioral effects are more selective. The similarity--attraction analysis further suggested that extroverted participants tended to respond more favorably to the extroverted NPC, providing partial support for the role of user--agent personality similarity.
+This study showed that AI NPC personality influenced users' subjective perceptions and visual-attention behavior in individual MR interaction, but its effects were not consistent across all outcome measures. The extroverted NPC elicited significantly higher perceived social presence and intention to use, and also attracted greater overall visual attention in terms of total gaze duration and gaze count. In contrast, the introverted NPC elicited longer average gaze durations, suggesting a different pattern of sustained visual attention. Together, these findings indicate that socially expressive personality cues can enhance users' subjective perceptions of an AI NPC, while their behavioral effects are more selective. The similarity-attraction analysis further suggested that extroverted participants tended to respond more favorably to the extroverted NPC, providing partial support for the role of user-agent personality similarity.
 
 These findings have two implications for understanding personality in human-AI interaction. First, perceived social presence, visual attention, and behavioral engagement appear to reflect different aspects of users' responses to AI NPCs, rather than a single unified effect. An NPC that is perceived as more socially present may attract more attention without necessarily eliciting more active interaction. Second, the effects of AI personality appear to depend not only on the agent's expressed traits but also on the characteristics of the user, suggesting that personality effects are relational rather than purely agent-driven.
 
 Importantly, this study examined users interacting with the AI NPCs individually, where the NPC served as the primary social interaction partner. In most museum experiences, however, users must also attend to and coordinate with another person. The presence of a partner may therefore alter how attention, reliance, and social engagement are distributed between the AI and human interaction partners. This motivated the subsequent dyadic studies, which examined whether personality effects observed at the individual level would persist, weaken, or take different forms when the AI NPC became part of a broader human-human-AI interaction.
 
-\section{Pair}\label{sec:pair}
+\section{Dyadic MR Studies}\label{sec:dyadic}
 
 Building on the individual user study, the next stage examined whether the effects of AI NPC personality would persist or change when the interaction became socially shared. In many museum visits, users experience exhibits with companions rather than alone, which may redistribute attention and engagement between the AI NPC and the human partner. To address this context, we conducted a dyadic pilot study as an intermediate step toward a formal pair study. The pilot study explored how two co-located users interacted with each other and with the AI NPC in the MR museum, and helped identify interaction patterns, system issues, and study-design considerations for the subsequent formal study.
 
 \subsection{Pilot Study}
 
-The pilot study served as an exploratory bridge between the individual MR study and the formal dyadic study. Whereas the individual study examined one-to-one interaction between a user and an AI NPC, the pilot introduced a human partner into the MR museum experience to explore personality-driven AI NPCs in a shared interaction setting. It examined whether exhibit-specific AI NPCs could support dyadic interaction, how pairs coordinated their attention and communication during the shared experience, and what usability, personality manipulation, and task design issues should be refined before the formal study.
+The pilot study served as an exploratory bridge between the individual study and the formal dyadic study. Whereas the individual study examined one-to-one interaction between a user and an AI NPC, the pilot introduced a human partner into the MR museum experience to explore personality-driven AI NPCs in a shared interaction setting. It examined whether exhibit-specific AI NPCs could support dyadic interaction, how pairs coordinated their attention and communication during the shared experience, and what usability, personality manipulation, and task design issues should be refined before the formal study.
 
 \subsubsection{System and Study Design}
 
@@ -405,65 +404,50 @@ The pilot study involved six participants forming three acquainted pairs. Five p
 
 Each pair completed the collaborative MR task while interacting with both AI NPCs. Questionnaire responses, system interaction logs, gaze data, and observational notes were collected to assess the feasibility of the dyadic interaction design and identify issues requiring refinement.
 
-\subsubsection{Pilot Findings and Design Issues}
-
-\paragraph{Personality Manipulation}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\linewidth]{figs/pilot_manipulation.png}
-    \caption{Comparison of net perceived extraversion scores ($\mathrm{PE}-\mathrm{PI}$) between the introverted and extroverted AI NPCs.}
-    \label{fig:pilot_manipulation}
-\end{figure}
-
-To assess whether the intended personality contrast was perceived by participants, we calculated a net perceived extraversion score by subtracting perceived introversion from perceived extraversion ($\mathrm{PE}-\mathrm{PI}$). Higher values indicated stronger perceived extraversion.
-
-As shown in Figure~\ref{fig:pilot_manipulation}, the observed pattern did not align with the intended personality manipulation. The NPC designed as extroverted showed a lower mean net extraversion score than the NPC designed as introverted. This mismatch suggested that the initial personality cues were not sufficiently robust in the dyadic MR setting and motivated further refinement before the formal study.
-
-\paragraph{Task Difficulty}
-
-Participants reported a low-to-moderate level of perceived task difficulty ($M=3.08$, $SD=0.66$, range $=2$--$4$ on a 7-point scale). The task was generally manageable while still requiring participants to interpret clues and coordinate with their partners.
-
-\paragraph{Interaction and Usability Issues}
-
-Observations during the pilot revealed several interaction issues. Some participants had difficulty reliably activating the virtual speech-input button, which occasionally disrupted attempts to initiate conversation with the NPC. Participants also experienced uncertainty regarding whether the system was available, listening, processing, or responding.
-
-The NPCs' task-related guidance was also sometimes too indirect. Because the initial prompts strongly constrained the NPCs from revealing task answers, some hints provided insufficient scaffolding for participants to progress efficiently through the task.
-
 \subsubsection{Design Refinements After the Pilot}
+\label{sec:refinements}
 
 \begin{table*}[t]
 \centering
-\caption{Summary of pilot findings and design refinements.}
+\caption{Summary of pilot findings, design refinements, and corresponding evidence in the formal dyadic study.}
 \label{tab:pilot_summary}
-\begin{tabular}{p{0.20\textwidth} p{0.34\textwidth} p{0.38\textwidth}}
+\begin{tabular}{p{0.15\textwidth} p{0.25\textwidth} p{0.28\textwidth} p{0.24\textwidth}}
 \toprule
-\textbf{Aspect} & \textbf{Pilot Finding} & \textbf{Design Refinement} \\
+\textbf{Aspect} &
+\textbf{Pilot Finding} &
+\textbf{Design Refinement} &
+\textbf{Evidence in Formal Study} \\
 \midrule
 
 Personality Manipulation
 &
-Personality differences were not consistently perceived.
+The configured personas differed in their intended personality profiles, but participants did not perceive the intended personality ordering.
 &
-Personality instructions were prioritized and emphasized in the prompts.
+The personality instructions were moved to the beginning of the system prompt and explicitly marked as high priority.
+&
+All four planned personality contrasts were in the intended direction, with three reaching statistical significance.
 \\
 
 \addlinespace
 
 Task Guidance
 &
-NPC guidance was inconsistent and insufficiently supportive.
+The restriction against revealing task answers sometimes resulted in hints that were too indirect to support task progression.
 &
-More scaffolded guidance was provided without revealing answers directly.
+NPCs were permitted to provide more explicit scaffolding, such as presenting candidate options or narrowing plausible interpretations, while still withholding the final answer.
+&
+Task straightforwardness and mental effort were assessed in the formal study; perceived task demand remained moderate.
 \\
 
 \addlinespace
 
 Interaction Usability
 &
-Speech input and system-state feedback were unreliable.
+Speech input was not always activated reliably, and participants were uncertain about the system's current interaction state.
 &
-Speech interaction was improved and explicit system-state feedback was added.
+The interface was revised to explicitly indicate four states: available, listening, processing, and responding.
+&
+Post-study ratings of interaction comfort, input reliability, and predictability were above the scale midpoint.
 \\
 
 \addlinespace
@@ -472,40 +456,37 @@ Study Design
 &
 The pilot included only acquainted pairs.
 &
-The formal study included both acquainted and unacquainted pairs.
+Recruitment was expanded to include both acquainted and unacquainted pairs.
+&
+The two acquaintance groups were comparable in gender composition, age, and trait extraversion.
 \\
 
 \bottomrule
 \end{tabular}
 \end{table*}
 
-Based on these design issues, we refined both the system design and the study design before conducting the subsequent experiment. First, we expanded participant recruitment to include both acquainted and unacquainted pairs, allowing us to examine how prior acquaintance may shape collaborative interaction with AI NPCs.
+Based on the issues identified in the pilot, we refined both the system design and the study design before conducting the formal dyadic study. Table~\ref{tab:pilot_summary} summarizes the identified issues, the corresponding refinements, and the evidence used to assess the revised design in the subsequent study.
 
-Second, we improved the speech-input interface by making system states more explicit. The interface was revised to help participants distinguish between available to speak, listening, processing, and responding states, thereby reducing uncertainty during turn-taking with the AI NPCs.
+First, we expanded participant recruitment to include both acquainted and unacquainted pairs. Because the pilot included only acquainted pairs, pair acquaintance was held constant and could not be examined as part of the interaction context. Including both pair types in the formal study allowed acquaintance to be treated as an explicit between-pair factor and enabled us to examine whether responses to AI NPC personality differed across social contexts.
 
-Third, we refined the personality prompts to strengthen the distinction between the introverted and extroverted NPCs. Specifically, the personality-related instructions were placed on the top in the prompt structure and marked as important to increase their priority during response generation. This refinement was intended to improve the consistency between the system-defined personality and participants’ perceived personality.
-Finally, we adjusted the task-related prompting strategy to reduce task difficulty while preserving the collaborative structure. 
+Second, we improved the speech-input interface and system-state feedback. The pilot revealed that participants sometimes had difficulty activating the virtual speech-input button and were uncertain about whether the system was available, listening, processing, or responding. The refined interface therefore explicitly indicated these four interaction states, allowing participants to better distinguish between an input that had not been registered and a response that was still being processed.
 
-Instead of only providing indirect hints, the NPCs were allowed to offer more scaffolded guidance, such as presenting possible options or narrowing the range of interpretations. This refinement was intended to help participants progress through the task without allowing the NPCs to simply provide the correct answers.
+Third, we refined the personality prompts to strengthen the consistency of personality expression during interaction. Although the configured personas exhibited the intended personality distinction, the pilot manipulation check showed that this distinction was not consistently reflected in participants' perceptions. Rather than changing the target personality traits themselves, we modified the structure and priority of the personality instructions. Specifically, the personality-related instructions were moved to the beginning of the system prompt and explicitly marked as high priority so that they would take precedence when personality expression competed with task-related constraints during response generation.
 
-\subsection{Experiment}
+Finally, we adjusted the task-related prompting strategy while preserving the collaborative structure of the asymmetric clue task. In the pilot, the restriction against revealing task answers sometimes resulted in guidance that was too indirect to help participants progress. The refined prompts therefore continued to prohibit the NPCs from directly providing the final answer but allowed them to offer more actionable scaffolding, such as presenting candidate options, narrowing the range of plausible interpretations, or directing participants' attention to relevant artifact features. This change was intended to support task progression without removing the need for participants to exchange information and collaboratively determine the answer.
 
-Building on the findings and design iterations from the pilot study, we conducted a formal evaluation of the dyadic MR experience with a larger sample. The formal dyadic study extended the pilot in two respects. First, recruitment was expanded to include both acquainted and unacquainted pairs, so that prior acquaintance could be treated as an explicit between-pair factor rather than a held-constant characteristic of the sample. Second, the system and task incorporated the refinements summarized in Table~\ref{tab:pilot_summary}, namely the strengthened personality prompts, the more scaffolded task guidance, and the explicit speech-input state feedback. Together, these changes allowed us to examine how NPC personality and pair acquaintance shaped users' perceptions of the AI, their reliance on the NPCs, and their collaborative engagement.
+The effectiveness of these refinements was subsequently assessed in the formal dyadic study. The revised personality manipulation was evaluated through participants' perceived introversion and extraversion ratings, task guidance was examined through post-study measures of task straightforwardness and mental effort, and interaction usability was assessed through ratings of interaction comfort, input reliability, and system predictability. The comparability of the acquainted and unacquainted groups was also examined before analyzing pair-acquaintance differences. These checks are reported together with the corresponding formal-study results below.
 
-Accordingly, the formal dyadic study addressed the following research questions:
-\begin{itemize}
-    \item \textbf{RQ3.} How does pair acquaintance shape users' reliance on AI NPCs in a collaborative MR experience?
-    \item \textbf{RQ4.} To what extent does AI NPC personality influence collaborative engagement in dyadic interaction?
-    \item \textbf{RQ5.} Does pair acquaintance moderate the effect of AI NPC personality on collaborative engagement?
-\end{itemize}
+\subsection{Formal Dyadic Study}
+
+Building on the personality-related findings from the individual study and the design refinements identified in the pilot study, we conducted a formal evaluation of the collaborative dyadic MR experience. The study examined how AI NPC personality shaped users' subjective evaluations and visual-attention behavior when interacting alongside another visitor, whether these responses differed between acquainted and unacquainted pairs, and whether user-NPC personality similarity showed different patterns across the two social contexts.
 
 \subsubsection{Participants and Procedure}
+For the formal study, we set up a designated experimental area within the Dah Hsian Seetoo Library in National Chengchi University in Taiwan. A total of 28 participants were recruited and assigned to 14 pairs: seven acquainted pairs and seven unacquainted pairs, yielding 14 participants in each acquaintance condition. The sample comprised 17 women and 11 men, with a mean age of 21.5 years ($SD = 1.69$, range 19-25). Participants' trait extraversion was assessed with the Extraversion domain of the BFI-2~\citep{SotoJohn2017} on its native five-point scale, and averaged $3.03$ ($SD = 0.74$, range $1.45$-$4.55$).
 
-A total of 28 participants were recruited and assigned to 14 pairs: seven acquainted pairs and seven unacquainted pairs, yielding 14 participants in each acquaintance condition. The sample comprised 17 women and 11 men, with a mean age of 21.5 years ($SD = 1.69$, range 19--25). Participants' trait extraversion was assessed with the Extraversion domain of the BFI-2~\cite{SotoJohn2017} on its native five-point scale, and averaged $3.03$ ($SD = 0.74$, range $1.45$--$4.55$).
+For the similarity-attraction analysis, participants were classified by comparing their BFI-2 extraversion domain mean against the scale midpoint of $3.0$, which also corresponded to the median of this sample: participants scoring above the midpoint were classified as extroverted, those scoring below as introverted, and the small number of participants scoring exactly at the midpoint were excluded from that comparison. This differs from the individual study, in which classification was based on the summed score relative to a theoretical midpoint of 36, and the two sets of similarity-attraction results should therefore not be read as products of an identical procedure.
 
-For the similarity--attraction analysis, participants were classified by comparing their BFI-2 extraversion domain mean against the scale midpoint of $3.0$, which also corresponded to the median of this sample: participants scoring above the midpoint were classified as extroverted, those scoring below as introverted, and the small number of participants scoring exactly at the midpoint were excluded from that comparison. This differs from the individual study, in which classification was based on the summed score relative to a theoretical midpoint of 36, and the two sets of similarity--attraction results should therefore not be read as products of an identical procedure.
-
-Because pair acquaintance was manipulated between pairs, we conducted exploratory checks on the comparability of the two groups. The acquainted and unacquainted groups did not differ significantly in gender composition (Fisher's exact test, $p = 1.000$), age ($t = -0.55$, $p = .585$), or trait extraversion ($t = 0.74$, $p = .469$), indicating that the two conditions were demographically comparable.
+Because pair acquaintance was manipulated between pairs, we conducted exploratory checks on the comparability of the two groups. The acquainted and unacquainted groups did not differ significantly in gender composition (Fisher's exact test, $p = 1.00$), age ($t = -0.55$, $p = .585$), or trait extraversion ($t = 0.74$, $p = .469$), indicating that the two conditions were demographically comparable.
 
 After providing consent, participants completed a pre-study questionnaire that collected demographic information and the trait personality measure described above. They then underwent eye-tracking calibration on the Microsoft HoloLens 2. The researcher introduced the MR guide system, explained the collaborative task, and distributed the task materials. Each pair subsequently interacted with both AI NPCs, with the order of the introverted and extroverted conditions randomly assigned to pairs. During each condition, participants could explore the physical exhibits, interact with virtual artifacts, discuss clues with their partner, and ask the AI NPC for additional information. After completing both interactions, participants filled out a post-study questionnaire assessing their perceptions of the AI NPCs, social presence, and collaborative experience. Each MR interaction session lasted approximately 16 minutes, and the full procedure took approximately 35 to 40 minutes.
 
@@ -525,13 +506,13 @@ The post-study questionnaire was administered once for each AI NPC, using seven-
 
 The focal outcome constructs were the same as in the individual study. Social presence was measured with five items adapted from Gefen and Straub~\cite{GefenStraub2004}, capturing a sense of human contact, individualized presence, social interactivity, warmth, and responsiveness. Continuance intention to use was measured with three items adapted from Li and Wang~\cite{LiWang2023}, and satisfaction with three items adapted from Shi et al.~\cite{Shietal2023}.
 
-Two differences from the individual study should be noted, as they constrain cross-study comparison. The individual study used five-point scales with four items each for intention to use and satisfaction, whereas the dyadic study used seven-point scales with three items each. For this reason, the cross-study analysis reported in Section~\ref{sec:pair} normalizes all questionnaire responses to a common 0--1 scale before comparison.
+Two differences from the individual study should be noted, as they constrain cross-study comparison. The individual study used five-point scales with four items each for intention to use and satisfaction, whereas the dyadic study used seven-point scales with three items each. For this reason, the cross-study analysis reported in Section~\ref{sec:pair} normalizes all questionnaire responses to a common 0-1 scale before comparison.
 
 Beyond these constructs, the post-study questionnaire also collected measures of trust, perceived benefit, perceived co-participation, task straightforwardness, mental effort, predictability, naturalness of communication, and perceived personality match, together with a small number of open-ended questions. These measures are not analyzed here and are reported elsewhere.
 
 \paragraph{Behavioral Measures}
 
-Behavioral data were collected from system interaction logs and from the eye-tracking stream recorded by the MR headset. Interaction logs captured the full human--NPC dialogue, from which we derived the number of questions each participant directed to each NPC and the average length of those utterances. Because participants' speech was automatically transcribed, utterance length indexes how much a participant said rather than the sophistication of their phrasing.
+Behavioral data were collected from system interaction logs and from the eye-tracking stream recorded by the MR headset. Interaction logs captured the full human-NPC dialogue, from which we derived the number of questions each participant directed to each NPC and the average length of those utterances. Because participants' speech was automatically transcribed, utterance length indexes how much a participant said rather than the sophistication of their phrasing.
 
 Eye-tracking data were analyzed across the same three AOI categories used in the individual study: the AI NPCs, the physical exhibits, and the virtual exhibits. Two complementary measures were computed for each AOI. Gaze duration was accumulated from gaze-exit events, so that overlapping gaze events were not double-counted, whereas gaze count was computed as the number of fixation events. Because the two measures derive from different event types, they capture distinct aspects of visual attention: gaze duration reflects the overall allocation of attention, whereas the ratio of duration to count reflects how sustained each individual gaze was. Both are reported below.
 
@@ -781,11 +762,11 @@ Figure~\ref{fig:gaze_overall} shows that the AI NPC was the primary visual-atten
 
 A contrasting pattern emerged when gaze duration was normalized by gaze count. As shown in Figure~\ref{fig:overall_gaze_duration}, the introverted NPC elicited longer average gaze durations than the extroverted NPC across the full sample (4.61 vs. 3.84 s per gaze), with the same directional pattern observed among both acquainted and unacquainted pairs (Figure~\ref{fig:gaze_duration_pair}). Thus, although the extroverted NPC attracted more frequent gaze and slightly greater total gaze duration, individual gazes toward the introverted NPC tended to be sustained for longer periods. This distinction suggests that gaze frequency and gaze persistence captured different aspects of visual-attention behavior.
 
-\subsubsection{Similarity--Attraction Effects}
+\subsubsection{Similarity-Attraction Effects}
 
 \begin{table*}[t]
 \centering
-\caption{Similarity--attraction analysis by pair acquaintance and construct.}
+\caption{Similarity-attraction analysis by pair acquaintance and construct.}
 \label{tab:similarity_attraction}
 
 \begin{subtable}[t]{0.48\textwidth}
@@ -817,9 +798,9 @@ Extroverts' Minimum
 Extroverts' Maximum
 & 3.0000 & 3.6667 & 4.0000 \\
 \midrule
-Mann--Whitney $U$
+Mann-Whitney $U$
 & 12.0000 & 9.0000 & 4.5000 \\
-Mann--Whitney $p$
+Mann-Whitney $p$
 & 0.1363 & 0.0601 & \textbf{0.0139*} \\
 Effect size ($r$)
 & 0.4154 & 0.5198 & 0.6750 \\
@@ -856,9 +837,9 @@ Extroverts' Minimum
 Extroverts' Maximum
 & 1.6000 & 2.6667 & 2.3333 \\
 \midrule
-Mann--Whitney $U$
+Mann-Whitney $U$
 & 6.5000 & 12.0000 & 9.5000 \\
-Mann--Whitney $p$
+Mann-Whitney $p$
 & 0.1340 & 0.6435 & 0.3591 \\
 Effect size ($r$)
 & 0.4801 & 0.1674 & 0.3042 \\
@@ -877,15 +858,15 @@ Effect size was calculated as $r = |Z|/\sqrt{N}$.
 
 \end{table*}
 
-Because participants did not always perceive the NPC personalities consistently with the experimentally assigned conditions, the similarity--attraction analysis was based on each participant's perceived NPC personality rather than the predefined introverted and extroverted labels. For each outcome, a similarity score was calculated as the rating for the NPC perceived as more similar to the participant's own personality minus the rating for the NPC perceived as more dissimilar. Positive values therefore indicate a preference for the personality-similar NPC, whereas negative values indicate a preference for the dissimilar NPC.
+Because participants did not always perceive the NPC personalities consistently with the experimentally assigned conditions, the similarity-attraction analysis was based on each participant's perceived NPC personality rather than the predefined introverted and extroverted labels. For each outcome, a similarity score was calculated as the rating for the NPC perceived as more similar to the participant's own personality minus the rating for the NPC perceived as more dissimilar. Positive values therefore indicate a preference for the personality-similar NPC, whereas negative values indicate a preference for the dissimilar NPC.
 
-For acquainted pairs, Table~\ref{tab:similarity_acquainted} indicates that similarity effects differed according to participants' own personality. Extroverted participants generally showed positive similarity scores, indicating more favorable evaluations of personality-similar NPCs, whereas introverted participants tended to show negative scores. Between-group comparisons indicated a significant difference only for satisfaction (SAT; $U=4.5$, $p=.014$, $r=.68$), with extroverted participants reporting greater satisfaction with personality-similar NPCs. Differences for social presence (SP; $U=12.0$, $p=.136$, $r=.42$) and intention to use (ITU; $U=9.0$, $p=.060$, $r=.52$) did not reach statistical significance, although the latter showed a similar directional pattern. Thus, the subjective results provided only partial evidence for similarity--attraction among acquainted pairs.
+For acquainted pairs, Table~\ref{tab:similarity_acquainted} indicates that similarity effects differed according to participants' own personality. Extroverted participants generally showed positive similarity scores, indicating more favorable evaluations of personality-similar NPCs, whereas introverted participants tended to show negative scores. Between-group comparisons indicated a significant difference only for satisfaction (SAT; $U=4.5$, $p=.014$, $r=.68$), with extroverted participants reporting greater satisfaction with personality-similar NPCs. Differences for social presence (SP; $U=12.0$, $p=.136$, $r=.42$) and intention to use (ITU; $U=9.0$, $p=.060$, $r=.52$) did not reach statistical significance, although the latter showed a similar directional pattern. Thus, the subjective results provided only partial evidence for similarity-attraction among acquainted pairs.
 
 For unacquainted pairs, Table~\ref{tab:similarity_unacquainted} shows that no significant differences in similarity scores were observed between introverted and extroverted participants for SP, ITU, or SAT ($p>.05$ for all comparisons). Although mean similarity scores were generally positive, the differences between introverted and extroverted participants were not statistically reliable, providing insufficient evidence that perceived personality similarity systematically increased evaluations of the NPC in unacquainted-pair interactions.
 
 \begin{table*}[t]
 \centering
-\caption{Similarity--attraction analysis of gaze behavior by pair acquaintance.}
+\caption{Similarity-attraction analysis of gaze behavior by pair acquaintance.}
 \label{tab:similarity_gaze}
 
 \begin{subtable}[t]{\textwidth}
@@ -902,10 +883,10 @@ Introverts' Mean Difference
 Extroverts' Mean Difference
 & -38.96 & -11.75 \\
 \midrule
-Mann--Whitney $U$
+Mann-Whitney $U$
 & 34.0 & 28.0 \\
 
-Mann--Whitney $p$
+Mann-Whitney $p$
 & 0.2200 & 0.6514 \\
 
 Effect size ($r$)
@@ -930,10 +911,10 @@ Introverts' Mean Difference
 Extroverts' Mean Difference
 & 13.19 & 8.00 \\
 \midrule
-Mann--Whitney $U$
+Mann-Whitney $U$
 & 10.0 & 12.5 \\
 
-Mann--Whitney $p$
+Mann-Whitney $p$
 & 0.4113 & 0.7144 \\
 
 Effect size ($r$)
@@ -954,18 +935,18 @@ $^{*}p < .05$, $^{**}p < .01$, $^{***}p < .001$.
 
 \end{table*}
 
-Regarding visual attention, Table~\ref{tab:similarity_gaze} presents a similar absence of consistent similarity--attraction effects. Among acquainted pairs, differences between introverted and extroverted participants were not significant for either gaze duration ($U=34.0$, $p=.220$) or gaze count ($U=28.0$, $p=.651$). Similarly, no significant differences were observed among unacquainted pairs for gaze duration ($U=10.0$, $p=.411$) or gaze count ($U=12.5$, $p=.714$). These results indicate that the subjective preference observed for satisfaction among acquainted extroverted participants was not reflected in greater visual attention toward personality-similar NPCs.
+Regarding visual attention, Table~\ref{tab:similarity_gaze} presents a similar absence of consistent similarity-attraction effects. Among acquainted pairs, differences between introverted and extroverted participants were not significant for either gaze duration ($U=34.0$, $p=.220$) or gaze count ($U=28.0$, $p=.651$). Similarly, no significant differences were observed among unacquainted pairs for gaze duration ($U=10.0$, $p=.411$) or gaze count ($U=12.5$, $p=.714$). These results indicate that the subjective preference observed for satisfaction among acquainted extroverted participants was not reflected in greater visual attention toward personality-similar NPCs.
 
 \subsubsection{Discussion}
 
-Personality effect show stronger between unacquainted pairs may reflect differences in how acquainted and unacquainted pairs engaged with the NPC during the shared experience. Acquainted pairs may have relied more on their existing rapport and coordination habits, making the NPC's personality less central to their evaluation. By contrast, unacquainted pairs may have benefited more from the extroverted NPC's proactive and expressive interaction style, which could have made the collaborative experience feel easier and more engaging. Rather than indicating a uniform advantage of extroversion, this pattern suggests that the value of NPC personality cues may depend on the social context of the dyad.
+The stronger personality effect observed among unacquainted pairs may reflect differences in how acquainted and unacquainted pairs engaged with the NPC during the shared experience. Acquainted pairs may have relied more on their existing rapport and coordination habits, making the NPC's personality less central to their evaluation. By contrast, unacquainted pairs may have benefited more from the extroverted NPC's proactive and expressive interaction style, which could have made the collaborative experience feel easier and more engaging. Rather than indicating a uniform advantage of extroversion, this pattern suggests that the value of NPC personality cues may depend on the social context of the dyad.
 
-The similarity--attraction effect was limited and context-dependent. Among acquainted pairs, extroverted participants showed some preference for personality-similar NPCs, particularly in satisfaction, whereas introverted participants did not exhibit the same pattern. No reliable similarity effect was observed among unacquainted pairs. Moreover, subjective preference was not reflected in gaze behavior, suggesting that personality similarity may influence evaluation without necessarily altering visual attention.
+The similarity-attraction effect was limited and context-dependent. Among acquainted pairs, extroverted participants showed some preference for personality-similar NPCs, particularly in satisfaction, whereas introverted participants did not exhibit the same pattern. No reliable similarity effect was observed among unacquainted pairs. Moreover, subjective preference was not reflected in gaze behavior, suggesting that personality similarity may influence evaluation without necessarily altering visual attention.
 
-\subsection{Cross-Study Analysis}
+\section{Cross-Study Results}
 
-To further comparing the collected data between single user and pair users, we seperate them into three group: single/acquainted pair/unacquainted pair. And we compared their Social Presence(SP), Intention to Use(ITU), and Satisfaction(SAT).
-
+To further compare the data collected from single users and paired users, we separated participants into three groups: single, acquainted pair, and unacquainted pair. We then compared their ratings on social presence (SP), intention to use (ITU), and satisfaction (SAT).
+ 
 \begin{figure}
     \centering
     \includegraphics[width=0.8\linewidth]{figs/output.png}
