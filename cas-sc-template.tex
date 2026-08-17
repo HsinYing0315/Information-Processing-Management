@@ -201,6 +201,14 @@ This study investigates how the effects of AI NPC personality extend from indivi
 
 The first study investigated how AI NPC personality shaped users' experiences in a single-user MR museum setting. Using a within-subjects MR tour experiment, participants interacted with both introverted and extroverted AI NPCs, allowing us to examine personality-related differences in subjective perceptions, interaction behaviors, and visual attention, as well as the role of user-NPC personality similarity.
 
+\subsection{Personality Design}
+
+AI NPC personality was operationalized along the extraversion dimension of the Big Five personality framework. The manipulation was implemented through both language and speech design. At the language level, GPT-4 prompts specified differences in conversational style, proactivity, emotional expressiveness, and response length. At the speech level, Azure TTS parameters were adjusted to reinforce the intended personality contrast.
+
+The introverted NPC was designed to use more concise and reserved responses with lower emotional intensity, whereas the extroverted NPC used more enthusiastic and socially expressive language and engaged more proactively with the user. These linguistic and vocal cues formed the core introversion--extraversion manipulation.
+
+The two personality conditions were embedded in different historical characters while maintaining a common exhibit theme. Bai Qi from the Warring States period represented the introverted condition, whereas Yue Fei from the Song Dynasty represented the extroverted condition. Both NPCs guided exhibits related to ancient Chinese weaponry, with similar weapon types selected to reduce content-related variation. Their appearances and narrative roles were designed to align with their respective historical contexts.
+
 \subsection{Participants}
 
 Participants’ extraversion was assessed using the Extraversion domain of the BFI-2 questionnaire. The scale consists of 12 items rated on a five-point Likert scale, yielding a possible summed score ranging from 12 to 60. A total score of 36 represents the theoretical midpoint of the scale, corresponding to an average item response of 3. Based on this midpoint, participants scoring 36 or below were classified as introverts, whereas those scoring above 36 were classified as extroverts. A total of 16 participants aged between 20 and 30 years were recruited, comprising eight participants in each group.
@@ -388,9 +396,11 @@ The pilot study was conducted at the Yang Ming Oceanic Culture \& Art Museum in 
 
 \subsubsection{Personality Design}
 
-AI NPC personality was operationalized as the primary within-pair independent variable. Drawing on the Big Five personality framework, we focused on extraversion as the target dimension for personality design, following prior work on personality perception in conversational agents. The manipulation was implemented through both language and speech design. At the language level, GPT-4 prompts were used to specify each NPC’s conversational style, degree of proactivity, and emotional expressiveness. At the speech level, Azure TTS parameters were adjusted to further differentiate the perceived interaction style of the two NPCs.
+The pilot study retained the introversion--extraversion manipulation established in the individual study, including the use of LLM prompting and TTS-based cues. However, the NPC identities and exhibit contexts were adapted to the new museum setting and the transition from individual to dyadic interaction.
 
-In the introverted condition, the NPC was designed to provide more concise responses, adopt a reserved conversational style, and express lower emotional intensity. In the extroverted condition, the NPC was designed to use more enthusiastic language, initiate interaction more proactively, and display higher emotional expressiveness. Although each NPC was also embedded within an exhibit-specific historical identity, the core manipulation centered on contrasting introverted and extroverted interaction styles.
+The original characters were replaced with two exhibit-specific historical figures: Emperor Huizong of Song represented the introverted condition, whereas Emperor Qianlong represented the extroverted condition. Each NPC was associated with a corresponding exhibit, with its appearance, historical identity, and dialogue content grounded in the surrounding physical and virtual artifacts. Although the characters and exhibit content changed, the underlying personality manipulation remained centered on the same introversion--extraversion contrast established in the individual study.
+
+To accommodate dyadic interaction, the NPCs were configured to operate within a shared multi-user conversational context. Each interaction followed a one-request--one-response structure, such that the NPC generated a single response to the current user request. However, the full conversation history involving both participants was retained and provided as context for response generation. The system prompts also explicitly specified that two co-located users were jointly interacting with the NPC. This allowed the NPC to interpret each request in relation to the ongoing multi-party conversation while maintaining a consistent introverted or extroverted interaction style across turns.
 
 \subsubsection{Collaborative Design}
 
@@ -400,9 +410,38 @@ To support this collaborative structure, the NPCs' task-related behavior was fur
 
 \subsubsection{Participants and Procedure}
 
-The pilot study involved six participants forming three acquainted pairs. Five participants were male and one was female. Participants were between 23 and 24 years old ($M=23.5$, $SD=0.5$). Based on self-reported trait extraversion, two participants were categorized as introverted and four as extroverted. Given the small sample size, these individual differences were treated descriptively rather than used for inferential comparison.
+The pilot study involved six participants forming three acquainted pairs. Five participants were male and one was female. Participants were between 23 and 24 years old ($M=23.5$, $SD=0.5$). Based on self-reported trait extraversion, two participants were categorized as introverted and four as extroverted.
 
 Each pair completed the collaborative MR task while interacting with both AI NPCs. Questionnaire responses, system interaction logs, gaze data, and observational notes were collected to assess the feasibility of the dyadic interaction design and identify issues requiring refinement.
+
+\subsubsection{Pilot Findings and Design Issues}
+
+\paragraph{Personality Manipulation}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\linewidth]{figs/pilot_manipulation.png}
+\caption{Pilot study: net perceived extraversion scores ($\mathrm{PE}-\mathrm{PI}$) for the introverted and extroverted AI NPCs ($N=6$).}
+\label{fig:pilot_manipulation}
+\end{figure}
+
+We assessed the personality manipulation at two levels: whether the intended personality distinction was represented in the configured personas and whether participants perceived the intended contrast during interaction.
+
+At the persona level, the two configured NPCs produced clearly differentiated Big Five profiles when directly assessed. As shown in Figure~\ref{fig:big5} (Appendix~\ref{app:figures}), the extroverted persona scored substantially higher on extraversion than the introverted persona (101 vs.\ 51), indicating that the intended personality contrast was represented in the persona configuration.
+
+At the perception level, however, the intended contrast was not reproduced in participants' ratings. We calculated a net perceived extraversion score by subtracting perceived introversion from perceived extraversion ($\mathrm{PE}-\mathrm{PI}$), with higher values indicating stronger perceived extraversion. As shown in Figure~\ref{fig:pilot_manipulation}, the NPC designed as extroverted received a lower mean net extraversion score than the NPC designed as introverted.
+
+Together, these results suggested a discrepancy between the configured personality distinction and the personality cues perceived during live dyadic interaction. This discrepancy motivated refinement of how personality-related instructions were prioritized during response generation.
+
+\paragraph{Task Difficulty}
+
+Participants reported a low-to-moderate level of perceived task difficulty ($M=3.08$, $SD=0.66$, range $=2$--$4$ on a 7-point scale). The task was generally manageable while still requiring participants to interpret clues and coordinate with their partners. However, observational data indicated that the support provided by the NPCs was not always sufficient to help participants progress efficiently through the task.
+
+\paragraph{Interaction and Usability Issues}
+
+Observations during the pilot revealed several interaction issues. Some participants had difficulty reliably activating the virtual speech-input button, which occasionally disrupted attempts to initiate conversation with the NPC. Participants also experienced uncertainty regarding whether the system was available, listening, processing, or responding.
+
+The NPCs' task-related guidance was also sometimes too indirect. Because the initial prompts strongly constrained the NPCs from revealing task answers, some responses provided insufficient scaffolding for participants to determine how to proceed. These observations suggested that both the interaction interface and the task-related prompting strategy required refinement before the formal dyadic study.
 
 \subsubsection{Design Refinements After the Pilot}
 \label{sec:refinements}
@@ -482,21 +521,19 @@ The effectiveness of these refinements was subsequently assessed in the formal d
 Building on the personality-related findings from the individual study and the design refinements identified in the pilot study, we conducted a formal evaluation of the collaborative dyadic MR experience. The study examined how AI NPC personality shaped users' subjective evaluations and visual-attention behavior when interacting alongside another visitor, whether these responses differed between acquainted and unacquainted pairs, and whether user-NPC personality similarity showed different patterns across the two social contexts.
 
 \subsubsection{Participants and Procedure}
-For the formal study, we set up a designated experimental area within the Dah Hsian Seetoo Library in National Chengchi University in Taiwan. A total of 28 participants were recruited and assigned to 14 pairs: seven acquainted pairs and seven unacquainted pairs, yielding 14 participants in each acquaintance condition. The sample comprised 17 women and 11 men, with a mean age of 21.5 years ($SD = 1.69$, range 19-25). Participants' trait extraversion was assessed with the Extraversion domain of the BFI-2~\citep{SotoJohn2017} on its native five-point scale, and averaged $3.03$ ($SD = 0.74$, range $1.45$-$4.55$).
-
-For the similarity-attraction analysis, participants were classified by comparing their BFI-2 extraversion domain mean against the scale midpoint of $3.0$, which also corresponded to the median of this sample: participants scoring above the midpoint were classified as extroverted, those scoring below as introverted, and the small number of participants scoring exactly at the midpoint were excluded from that comparison. This differs from the individual study, in which classification was based on the summed score relative to a theoretical midpoint of 36, and the two sets of similarity-attraction results should therefore not be read as products of an identical procedure.
-
-Because pair acquaintance was manipulated between pairs, we conducted exploratory checks on the comparability of the two groups. The acquainted and unacquainted groups did not differ significantly in gender composition (Fisher's exact test, $p = 1.00$), age ($t = -0.55$, $p = .585$), or trait extraversion ($t = 0.74$, $p = .469$), indicating that the two conditions were demographically comparable.
+For the formal study, we set up a designated experimental area within the Dah Hsian Seetoo Library in National Chengchi University in Taiwan. A total of 28 participants were recruited and assigned to 14 pairs: seven acquainted pairs and seven unacquainted pairs, yielding 14 participants in each acquaintance condition. The sample comprised 17 women and 11 men, with a mean age of 21.5 years ($SD = 1.69$, range 19-25). Participants' trait extraversion was assessed with the Extraversion domain of the BFI-2~\citep{SotoJohn2017} on its native five-point scale, and averaged $3.03$ ($SD = 0.74$, range $1.45$-$4.55$). Exploratory checks were conducted to assess the comparability of the two groups. The results showed that the acquainted and unacquainted groups did not differ significantly in gender composition (Fisher's exact test, $p = 1.00$), age ($t = -0.55$, $p = .585$), or trait extraversion ($t = 0.74$, $p = .469$), indicating that the two conditions were demographically comparable.
 
 After providing consent, participants completed a pre-study questionnaire that collected demographic information and the trait personality measure described above. They then underwent eye-tracking calibration on the Microsoft HoloLens 2. The researcher introduced the MR guide system, explained the collaborative task, and distributed the task materials. Each pair subsequently interacted with both AI NPCs, with the order of the introverted and extroverted conditions randomly assigned to pairs. During each condition, participants could explore the physical exhibits, interact with virtual artifacts, discuss clues with their partner, and ask the AI NPC for additional information. After completing both interactions, participants filled out a post-study questionnaire assessing their perceptions of the AI NPCs, social presence, and collaborative experience. Each MR interaction session lasted approximately 16 minutes, and the full procedure took approximately 35 to 40 minutes.
 
 \subsubsection{Experimental Design}
 
-The study employed a mixed design to examine how AI NPC personality and pair acquaintance jointly shape collaborative interaction in a co-located MR museum. NPC personality was manipulated within pair, such that each pair interacted with both an introverted and an extroverted NPC, whereas pair acquaintance was a between-pair factor contrasting acquainted and unacquainted pairs. This design allowed us to test both the main effect of NPC personality on collaborative engagement (RQ4) and the moderating role of pair acquaintance (RQ5).
+The formal dyadic study employed a mixed design. AI NPC personality was manipulated within pairs, such that each pair interacted with both an introverted and an extroverted NPC, whereas pair acquaintance was treated as a between-pair factor contrasting acquainted and unacquainted pairs. This design allowed us to examine the effects of NPC personality on users' subjective evaluations and visual-attention behavior (RQ3), whether these responses differed by pair acquaintance (RQ4), and whether user--NPC personality similarity showed different patterns across the two acquaintance conditions (RQ5).
 
-The personality manipulation and the collaborative task followed the design established in the pilot study. As before, extraversion served as the target Big Five dimension~\cite{Neffetal2010}; linguistic, interactional, and affective features were embedded in GPT-4 prompts, and speech characteristics were further differentiated through Azure TTS parameters. The introverted NPC was embodied as Emperor Huizong of Song and the extroverted NPC as Emperor Qianlong, providing exhibit-specific historical identities while retaining the personality contrast as the core manipulation. The collaborative task likewise retained the asymmetric clue structure: each participant received the same background story and task questions but a different set of exhibit-related clues, so that progress required exchanging information, discussing interpretations, and coordinating next steps. Within this structure, AI reliance was operationalized as the extent to which pairs sought information, clarification, or task support from the AI NPCs, whereas collaborative engagement was operationalized through participants' joint attention to exhibits and NPCs, their coordination of clue interpretation, and their conversational alignment during the task.
+The study retained the personality design and collaborative interaction structure developed through the preceding studies. The introversion--extraversion manipulation established in the individual study and adapted to a shared multi-user conversational context in the pilot was preserved. The historical NPC identities and exhibit-specific configuration introduced in the pilot were also retained, with Emperor Huizong of Song representing the introverted condition and Emperor Qianlong representing the extroverted condition. Each NPC continued to operate using a one-request--one-response structure while maintaining the full conversation history of both participants and a system-level specification that the interaction involved two co-located users.
 
-The formal study differed from the pilot in the four respects summarized in Table~\ref{tab:pilot_summary}. Personality instructions were placed at the top of the prompt structure and marked as high priority; the NPCs were permitted to offer scaffolded guidance, such as presenting possible options or narrowing the range of interpretations, rather than only indirect hints; the speech-input interface was revised to make the available, listening, processing, and responding states explicit; and recruitment was extended beyond acquainted pairs to include unacquainted pairs.
+The asymmetric collaborative task introduced in the pilot was likewise retained. Both participants received the same background story and task questions but different exhibit-related clues, requiring them to exchange information, discuss interpretations, and coordinate their next steps while interacting with the AI NPC within the shared human--human--AI setting.
+
+The formal dyadic study incorporated the refinements identified through the pilot, including strengthened personality prompting, more actionable task scaffolding, clearer speech-input feedback, and the inclusion of both acquainted and unacquainted pairs (Table~\ref{tab:pilot_summary}).
 
 \subsubsection{Measures}
 
@@ -945,7 +982,9 @@ The similarity-attraction effect was limited and context-dependent. Among acquai
 
 \section{Cross-Study Results}
 
-To further compare the data collected from single users and paired users, we separated participants into three groups: single, acquainted pair, and unacquainted pair. We then compared their ratings on social presence (SP), intention to use (ITU), and satisfaction (SAT).
+The cross-study analysis was conducted to examine whether the relative advantage of the extroverted NPC observed in the single-user study persisted across dyadic interaction contexts. Specifically, we compared three interaction conditions: single-user interaction, acquainted dyads, and unacquainted dyads.
+
+We then compared their ratings on social presence (SP), intention to use (ITU), and satisfaction (SAT).
  
 \begin{figure}
     \centering
