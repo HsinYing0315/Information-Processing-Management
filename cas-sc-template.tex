@@ -166,13 +166,18 @@ Here goes the abstract.
 % Main text
 \section{Introduction}\label{sec:introduction}
 % MR museums and AI NPCs
+As mixed reality (MR) technologies become more common in museum settings, AI-driven non-player characters (AI NPCs) offer new possibilities for guiding visitors through interactive, situated, and socially engaging cultural experiences.
 
 % Personality as a social design mechanism
+Beyond providing information, AI NPCs can be designed with distinct personality traits that shape how users perceive, attend to, and interact with them as social partners.
 
 % From human--AI interaction to human--human--AI interaction
+Although prior work has often examined AI agents in one-to-one human-AI interaction, museum visits frequently occur in social settings where visitors experience exhibits together with companions.
 
 % Research Objective
-This study investigates how the effects of AI NPC personality extend from individual interaction to dyadic collaboration, and how NPC personality and pair acquaintance jointly influence users’ perceptions of the AI, reliance on the AI, and collaborative engagement in dyadic settings.
+This research aims to investigate how the effects of AI NPC personality extend from individual interaction to dyadic collaboration, and how NPC personality and pair acquaintance jointly influence users’ perceptions of the AI, reliance on the AI, and collaborative engagement in dyadic settings.
+
+To guide this investigation, we formulated five research questions addressing AI NPC personality effects, personality similarity, dyadic collaboration, and pair acquaintance as follow: 
 
 \begin{itemize}
     \item \textbf{RQ1.} How does AI NPC personality influence users’ perceptions and interaction behaviors in an individual MR museum experience?
@@ -708,9 +713,7 @@ The formal dyadic study incorporated the refinements identified through the pilo
 
 The post-study questionnaire was administered once for each AI NPC, using seven-point Likert scales throughout, with reverse-keyed items recoded. As a manipulation check, participants rated each NPC on perceived extraversion (``extroverted and energetic'') and perceived introversion (``quiet and reserved''), each measured with a single item; the net perceived extraversion score reported below is the difference between the two ($\mathrm{PE}-\mathrm{PI}$).
 
-The focal outcome constructs were the same as in the individual study. Social presence was measured with five items adapted from Gefen and Straub~\cite{GefenStraub2004}, capturing a sense of human contact, individualized presence, social interactivity, warmth, and responsiveness. Continuance intention to use was measured with three items adapted from Li and Wang~\cite{LiWang2023}, and satisfaction with three items adapted from Shi et al.~\cite{Shietal2023}.
-
-Two differences from the individual study should be noted, as they constrain cross-study comparison. The individual study used five-point scales with four items each for intention to use and satisfaction, whereas the dyadic study used seven-point scales with three items each. For this reason, the cross-study analysis reported in Section~\ref{sec:pair} normalizes all questionnaire responses to a common 0-1 scale before comparison.
+The focal outcome constructs were the same as in the individual study. Social presence was measured with five items adapted from ~\cite{gefenConsumerTrustB2C2004}, capturing a sense of human contact, individualized presence, social interactivity, warmth, and responsiveness. Continuance intention to use was measured with three items adapted from ~\cite{liChatbotsEcommerceEffect2023}, and satisfaction with three items adapted from Shi et al.
 
 Beyond these constructs, the post-study questionnaire also collected measures of trust, perceived benefit, perceived co-participation, task straightforwardness, mental effort, predictability, naturalness of communication, and perceived personality match, together with a small number of open-ended questions. These measures are not analyzed here and are reported elsewhere.
 
@@ -1151,24 +1154,65 @@ The similarity-attraction effect was limited and context-dependent. Among acquai
 
 The cross-study analysis was conducted to examine whether the relative advantage of the extroverted NPC observed in the single-user study persisted across dyadic interaction contexts. Specifically, we compared three interaction conditions: single-user interaction, acquainted dyads, and unacquainted dyads.
 
-We then compared their ratings on social presence (SP), intention to use (ITU), and satisfaction (SAT).
- 
+The analysis focused on the three subjective constructs that were measured consistently across the studies: social presence (SP), intention to use (ITU), and satisfaction (SAT).
+
 \begin{figure}
     \centering
     \includegraphics[width=0.8\linewidth]{figs/output.png}
-    \caption{Boxplots of Average User Ratings for Introverted vs. Extroverted AI NPCs on SP, ITU, and SAT Constructs}
+    \caption{Comparison of user ratings for introverted and extroverted AI NPCs across the single-user, acquainted-dyad, and unacquainted-dyad conditions.}
     \label{fig:boxplots}
 \end{figure}
 
-From Figure~\ref{fig:boxplots}, we can tell that overall, participants in the Single User condition exhibited a more pronounced advantage for the extroverted NPC in terms of social presence (SP) and intention to use (ITU). In contrast, the differences observed in the Acquainted Pair and Unacquainted Pair conditions were smaller and less consistent. This pattern suggests that when users interact with an NPC alongside another participant rather than individually, the influence of NPC personality on subjective evaluations may be attenuated by the presence of a human partner.
+As shown in Figure~\ref{fig:boxplots}, the extroverted NPC showed a larger descriptive advantage in the single-user condition, particularly for SP and ITU, whereas the differences between the two NPC personalities were generally smaller in the dyadic conditions. Because the single-user study employed a five-point Likert scale whereas the dyadic study employed a seven-point Likert scale, all questionnaire responses were first normalized to a common 0--1 scale before cross-study comparison.
 
-Because the Single User study employed a 5-point Likert scale, whereas the pair-based studies employed a 7-point Likert scale, all questionnaire responses were normalized to a common 0–1 scale for the subsequent analyses.
+To quantify the relative effect of NPC personality, a personality-difference score was calculated for each participant and construct as the normalized rating of the extroverted NPC minus that of the introverted NPC:
 
-To further examine whether the effects differed statistically across the three interaction conditions, a difference score was calculated for each participant and construct by subtracting the rating of the introverted NPC from that of the extroverted NPC. A positive score therefore indicated a relative preference for the extroverted NPC, whereas a negative score indicated a relative preference for the introverted NPC.
+\[
+D = Rating_{\mathrm{Extroverted}} - Rating_{\mathrm{Introverted}}.
+\]
 
-Kruskal–Wallis tests were then conducted to compare the distributions of the difference scores across the Single User, Acquainted Pair, and Unacquainted Pair conditions. The results revealed a significant between-condition difference in the SP difference scores, indicating that the relative effect of the extroverted NPC, compared with the introverted NPC, on perceived social presence varied across interaction conditions.
+Positive values therefore indicated a relative advantage for the extroverted NPC, whereas negative values indicated a relative advantage for the introverted NPC. Kruskal--Wallis tests were then conducted to compare the distributions of these difference scores across the single-user, acquainted-dyad, and unacquainted-dyad conditions. To further characterize any cross-context differences, normalized ratings for the introverted and extroverted NPCs were also examined separately.
 
-By contrast, the Kruskal–Wallis tests for ITU and satisfaction (SAT) were not statistically significant. Thus, there was insufficient evidence to conclude that the relative advantage of the extroverted NPC in terms of intention to use or satisfaction differed across the three interaction conditions.
+\begin{table}[t]
+\centering
+\caption{Kruskal--Wallis comparisons of normalized NPC evaluations and personality-difference scores across interaction contexts.}
+\label{tab:cross_study_kw}
+\begin{tabular}{llcc}
+\toprule
+\textbf{Measure} & \textbf{Construct} & \textbf{$H$} & \textbf{$p$} \\
+\midrule
+Introverted NPC
+    & SP  & 2.2500 & .3246 \\
+    & ITU & 3.9503 & .1387 \\
+    & SAT & 2.9136 & .2330 \\
+\addlinespace
+Extroverted NPC
+    & SP  & 7.7314 & \textbf{.0209}$^{*}$ \\
+    & ITU & 3.0603 & .2165 \\
+    & SAT & 1.6277 & .4432 \\
+\addlinespace
+Personality difference ($D$)
+    & SP  & 8.6800 & \textbf{.0130}$^{*}$ \\
+    & ITU & 2.5069 & .2855 \\
+    & SAT & 1.5490 & .4609 \\
+\bottomrule
+\end{tabular}
+
+\vspace{1mm}
+\begin{minipage}{0.95\linewidth}
+\footnotesize
+\textit{Note.} $D =$ normalized extroverted-NPC rating minus normalized introverted-NPC rating. 
+$^{*}p < .05$.
+\end{minipage}
+\end{table}
+
+As shown in Table~\ref{tab:cross_study_kw}, the personality-difference score varied significantly across interaction contexts for SP, $H(2)=8.68$, $p=.013$. In contrast, no significant between-context differences were observed for ITU, $H(2)=2.51$, $p=.286$, or SAT, $H(2)=1.55$, $p=.461$. Thus, the clearest cross-study variation in the relative effect of NPC personality emerged for perceived social presence.
+
+Because the omnibus test for $D_{\mathrm{SP}}$ was significant, pairwise Mann--Whitney $U$ tests with Holm correction were conducted as post-hoc comparisons. The SP difference score was significantly greater in the single-user condition than in both the acquainted-dyad condition ($U=176.5$, $p_{\mathrm{Holm}}=.023$, $r_{\mathrm{rb}}=.576$) and the unacquainted-dyad condition ($U=167.5$, $p_{\mathrm{Holm}}=.044$, $r_{\mathrm{rb}}=.496$). In contrast, the acquainted- and unacquainted-dyad conditions did not differ significantly ($U=92.5$, $p_{\mathrm{Holm}}=.818$, $r_{\mathrm{rb}}=-.056$). These results indicate that the relative social-presence advantage of the extroverted NPC was significantly stronger in the single-user condition than in either dyadic condition, while the magnitude of this relative advantage did not differ reliably between acquainted and unacquainted dyads.
+
+To further characterize this SP pattern, normalized ratings for the two NPC personalities were examined separately. SP ratings of the extroverted NPC differed significantly across interaction contexts, $H(2)=7.73$, $p=.021$, whereas SP ratings of the introverted NPC did not, $H(2)=2.25$, $p=.325$. Holm-adjusted post-hoc comparisons for the extroverted NPC showed that SP ratings were significantly higher in the single-user condition than in the unacquainted-dyad condition ($U=174.0$, $p_{\mathrm{Holm}}=.032$, $r_{\mathrm{rb}}=.554$). The difference between the single-user and acquainted-dyad conditions did not reach statistical significance after correction ($U=163.0$, $p_{\mathrm{Holm}}=.071$, $r_{\mathrm{rb}}=.455$), and no difference was observed between the acquainted- and unacquainted-dyad conditions ($U=104.0$, $p_{\mathrm{Holm}}=.800$, $r_{\mathrm{rb}}=.061$).
+
+No significant cross-context differences were found for ITU or SAT ratings of either NPC personality. Taken together, the cross-study results indicate that interaction context primarily affected the degree of differentiation in social presence between the two NPC personalities. The extroverted NPC exhibited a substantially larger relative SP advantage in individual interaction than in dyadic interaction, while the separate-condition analyses suggest that this pattern was associated more strongly with variation in evaluations of the extroverted NPC than with systematic changes in evaluations of the introverted NPC.
 
 \section{General discussions}\label{sec:general}
 Extroverted participants of acquianted pairs generally showed positive similarity scores, which is aligned with the result of single user.
