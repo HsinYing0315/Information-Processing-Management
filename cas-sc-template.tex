@@ -165,14 +165,15 @@ Here goes the abstract.
 
 % Main text
 \section{Introduction}\label{sec:introduction}
+
 % MR museums and AI NPCs
-As mixed reality (MR) technologies become more common in museum settings, AI-driven non-player characters (AI NPCs) offer new possibilities for guiding visitors through interactive, situated, and socially engaging cultural experiences.
+As mixed reality (MR) technologies become more common in museum settings, AI-driven non-player characters (AI NPCs) offer new possibilities for guiding visitors through interactive, situated, and socially engaging cultural experiences. Although MR still lacks a single agreed-upon definition, it is broadly understood as a class of experiences that blend physical and virtual content across varying degrees of immersion, virtuality, and interaction~\citep{speicherWhatMixedReality2019}. Within cultural heritage, MR has been used to move the museum beyond the mere display of information toward emotive, immersive, and richly interactive encounters with artifacts, for example through head-worn displays that overlay computer-generated content onto real exhibits~\citep{hammadyFrameworkConstructingEvaluating2021, marti-testonMethodologyProduceAugmentedReality2021}. Empirical work further suggests that wearable MR systems can improve visitors' retention, comprehension, and situational interest relative to conventional mobile guides~\citep{chinApplyingWearableMRbased2024}. In parallel, AI-driven agents such as chatbots have been introduced into museum learning to provide adaptive, on-demand feedback and to sustain visitors' cognitive and emotional engagement~\citep{liangEffectAIbasedChatbot2024}. Bringing these threads together, holographic or embodied virtual guides point toward MR environments populated by AI NPCs that can converse with visitors and mediate their engagement with exhibits~\citep{hammadyFrameworkConstructingEvaluating2021, yuIntegratingMixedReality}.
 
 % Personality as a social design mechanism
-Beyond providing information, AI NPCs can be designed with distinct personality traits that shape how users perceive, attend to, and interact with them as social partners.
+Beyond providing information, AI NPCs can be designed with distinct personality traits that shape how users perceive, attend to, and interact with them as social partners. The Big Five model, and extraversion in particular, has become a common organizing framework for endowing artificial agents with recognizable personalities~\citep{neffEvaluatingEffectGesture2010, ahmadFrameworkPersonalityCues2022}. \citet{neffEvaluatingEffectGesture2010} show that both verbal cues (such as language style and word choice) and non-verbal cues (such as gesture rate and movement) can be systematically varied so that users reliably perceive an agent as more introverted or extraverted, a range of cues that \citet{ahmadFrameworkPersonalityCues2022} later organize into a design framework. This work builds on the long-standing finding that people respond socially to machines: \citet{leeCanRobotsManifest2006} show that robots manifesting personality elicit social responses and a heightened sense of social presence. Imbuing conversational agents with personality has been shown to increase perceived humanness, social presence, and communication satisfaction, with extraverted agents often preferred, though introverted agents can elicit deeper user engagement in some settings~\citep{ahmadCommunicatingMachinesConversational2021, volkelUserPerceptionsExtraversion2022}. These effects extend across embodiments, from text chatbots and product-recommendation agents to humanoid robots used with older adults, and, more recently, to large language models that can be prompted to express consistent personality profiles~\citep{jinBirdsFeatherFlock2023, zeddaOlderAdultsUser2025, jiangPersonaLLMInvestigatingAbility2024}. Together, this literature positions personality not as a cosmetic feature but as a deliberate social design mechanism for shaping human--agent interaction.
 
 % From human--AI interaction to human--human--AI interaction
-Although prior work has often examined AI agents in one-to-one human-AI interaction, museum visits frequently occur in social settings where visitors experience exhibits together with companions.
+Although prior work has often examined AI agents in one-to-one human--AI interaction, museum visits frequently occur in social settings where visitors experience exhibits together with companions. \citet{tolmieSupportingGroupInteractions2014} show through ethnographic study that visiting is fundamentally a social activity: group members continually coordinate their movement and attention, and engagement with an exhibit often ends prematurely because of the need to keep up with, summon, or attend to fellow visitors. Maintaining group coherence while still allowing individual engagement is therefore a central design challenge, and prior systems have addressed it by reconfiguring the social dynamics of the visit rather than directing individuals in isolation~\citep{foshSupportingGroupCoherence2016, foshGiftingPersonalInterpretations2014}. Collaborative and game-based designs likewise leverage the presence of companions to deepen engagement across a group of visitors~\citep{klopferMysteryMuseumCollaborative2005}. Yet most personality-focused agent research still evaluates dyadic human--agent exchanges, giving comparatively little attention to how an agent's social behavior plays out when several co-present people share the same agent~\citep{ahmadCommunicatingMachinesConversational2021, volkelUserPerceptionsExtraversion2022}. Because social presence and the quality of interaction depend heavily on context and on the configuration of the people involved, moving from human--AI to human--human--AI interaction raises new questions about how an AI NPC's personality shapes not only each visitor's experience but also the social dynamics between companions~\citep{ohSystematicReviewSocial2018, yuIntegratingMixedReality}.
 
 % Research Objective
 This research aims to investigate how the effects of AI NPC personality extend from individual interaction to dyadic collaboration, and how NPC personality and pair acquaintance jointly influence users’ perceptions of the AI, reliance on the AI, and collaborative engagement in dyadic settings.
@@ -1154,6 +1155,8 @@ The similarity-attraction effect was limited and context-dependent. Among acquai
 
 The cross-study analysis was conducted to examine whether the relative advantage of the extroverted NPC observed in the single-user study persisted across dyadic interaction contexts. Specifically, we compared three interaction conditions: single-user interaction, acquainted dyads, and unacquainted dyads.
 
+\subsection{Subjective}\label{sec:cross-sub}
+
 The analysis focused on the three subjective constructs that were measured consistently across the studies: social presence (SP), intention to use (ITU), and satisfaction (SAT).
 
 \begin{figure}
@@ -1213,6 +1216,38 @@ Because the omnibus test for $D_{\mathrm{SP}}$ was significant, pairwise Mann--W
 To further characterize this SP pattern, normalized ratings for the two NPC personalities were examined separately. SP ratings of the extroverted NPC differed significantly across interaction contexts, $H(2)=7.73$, $p=.021$, whereas SP ratings of the introverted NPC did not, $H(2)=2.25$, $p=.325$. Holm-adjusted post-hoc comparisons for the extroverted NPC showed that SP ratings were significantly higher in the single-user condition than in the unacquainted-dyad condition ($U=174.0$, $p_{\mathrm{Holm}}=.032$, $r_{\mathrm{rb}}=.554$). The difference between the single-user and acquainted-dyad conditions did not reach statistical significance after correction ($U=163.0$, $p_{\mathrm{Holm}}=.071$, $r_{\mathrm{rb}}=.455$), and no difference was observed between the acquainted- and unacquainted-dyad conditions ($U=104.0$, $p_{\mathrm{Holm}}=.800$, $r_{\mathrm{rb}}=.061$).
 
 No significant cross-context differences were found for ITU or SAT ratings of either NPC personality. Taken together, the cross-study results indicate that interaction context primarily affected the degree of differentiation in social presence between the two NPC personalities. The extroverted NPC exhibited a substantially larger relative SP advantage in individual interaction than in dyadic interaction, while the separate-condition analyses suggest that this pattern was associated more strongly with variation in evaluations of the extroverted NPC than with systematic changes in evaluations of the introverted NPC.
+
+\subsection{Similarity Attraction}
+
+To examine whether similarity--attraction effects varied across interaction contexts, the analysis used the normalized questionnaire ratings described in Section~\ref{sec:cross-sub}. Similarity was defined based on the experimentally assigned personalities of the AI NPCs. For each participant, a similarity score was calculated for the three constructs measured consistently across studies: social presence (SP), intention to use (ITU), and satisfaction (SAT). For extroverted participants, the score was calculated as the normalized rating of the extroverted NPC minus that of the introverted NPC; for introverted participants, it was calculated as the normalized rating of the introverted NPC minus that of the extroverted NPC. Positive values therefore indicated a relative preference for the personality-matched NPC, negative values indicated a relative preference for the personality-mismatched NPC, and values near zero indicated little or no similarity-based preference. This transformation aligned the direction of the similarity measure across participant personality groups, allowing similarity--attraction patterns to be compared across the single-user, acquainted-dyad, and unacquainted-dyad conditions.
+
+Kruskal--Wallis tests first compared similarity scores across the three interaction contexts with introverted and extroverted participants pooled within each condition. No significant differences were found for SP ($H(2)=4.90$, $p=.086$), ITU ($H(2)=0.14$, $p=.930$), or SAT ($H(2)<0.01$, $p>.999$). However, descriptive patterns differed between introverted and extroverted participants, suggesting that pooling the two personality groups could obscure personality-specific variation. Comparisons were therefore conducted separately by participant personality.
+
+As shown in Table~\ref{tab:cross_similarity_personality}, introverted participants exhibited a significant difference across contexts in SP similarity scores, $H(2)=8.93$, $p=.012$, $\epsilon^2=.385$. The median similarity score increased from $-.500$ in the single-user condition to $-.050$ in the acquainted-dyad condition and $.100$ in the unacquainted-dyad condition, descriptively indicating an attenuation of the pronounced preference for the personality-mismatched NPC observed during individual interaction. No significant differences were observed for ITU ($p=.563$) or SAT ($p=.729$). Among extroverted participants, SP similarity scores were positive in the single-user ($Mdn=.150$) and unacquainted-dyad ($Mdn=.133$) conditions but close to zero in the acquainted-dyad condition ($Mdn=-.017$). This difference did not reach statistical significance, $H(2)=5.81$, $p=.055$, $\epsilon^2=.212$. ITU ($p=.360$) and SAT ($p=.653$) likewise showed no significant differences across contexts.
+
+\begin{table}[t]
+\centering
+\caption{Cross-context comparison of similarity scores by participant personality.}
+\label{tab:cross_similarity_personality}
+\begin{tabular}{llrrrrrr}
+\toprule
+Participant & Construct & Single & Acquainted & Unacquainted & $H$ & $p$ & $\epsilon^2$ \\
+Personality & & Mdn & Mdn & Mdn & & & \\
+\midrule
+Introverted
+    & SP  & $-.500$ & $-.050$ & $.100$  & 8.93 & .012 & .385 \\
+    & ITU & $-.333$ & $-.028$ & $-.056$ & 1.15 & .563 & .000 \\
+    & SAT & $-.042$ & $.000$  & $-.056$ & 0.63 & .729 & .000 \\
+\midrule
+Extroverted
+    & SP  & $.150$ & $-.017$ & $.133$ & 5.81 & .055 & .212 \\
+    & ITU & $.000$ & $-.028$ & $.222$ & 2.04 & .360 & .002 \\
+    & SAT & $.000$ & $-.028$ & $.111$ & 0.85 & .653 & .000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Because the omnibus test for SP among introverted participants was significant, Holm-adjusted pairwise Mann--Whitney $U$ tests were conducted. The SP similarity score was significantly lower in the single-user condition than in the unacquainted-dyad condition ($U=5.0$, $p_{\mathrm{Holm}}=.027$, rank-biserial $r=-.821$). In contrast, neither the single-user versus acquainted-dyad comparison nor the acquainted-dyad versus unacquainted-dyad comparison was significant (both $p_{\mathrm{Holm}}=.168$). Thus, the observed cross-context difference among introverted participants was primarily attributable to the contrast between the single-user and unacquainted-dyad conditions.
 
 \section{General discussions}\label{sec:general}
 Extroverted participants of acquianted pairs generally showed positive similarity scores, which is aligned with the result of single user.
