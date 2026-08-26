@@ -167,18 +167,18 @@ Here goes the abstract.
 \section{Introduction}\label{sec:introduction}
 
 % MR museums and AI NPCs
-As mixed reality (MR) technologies become more common in museum settings, AI-driven non-player characters (AI NPCs) offer new possibilities for guiding visitors through interactive, situated, and socially engaging cultural experiences. Although MR still lacks a single agreed-upon definition, it is broadly understood as a class of experiences that blend physical and virtual content across varying degrees of immersion, virtuality, and interaction~\citep{speicherWhatMixedReality2019}. Within cultural heritage, MR has been used to move the museum beyond the mere display of information toward emotive, immersive, and richly interactive encounters with artifacts, for example through head-worn displays that overlay computer-generated content onto real exhibits~\citep{hammadyFrameworkConstructingEvaluating2021, marti-testonMethodologyProduceAugmentedReality2021}. Empirical work further suggests that wearable MR systems can improve visitors' retention, comprehension, and situational interest relative to conventional mobile guides~\citep{chinApplyingWearableMRbased2024}. In parallel, AI-driven agents such as chatbots have been introduced into museum learning to provide adaptive, on-demand feedback and to sustain visitors' cognitive and emotional engagement~\citep{liangEffectAIbasedChatbot2024}. Bringing these threads together, holographic or embodied virtual guides point toward MR environments populated by AI NPCs that can converse with visitors and mediate their engagement with exhibits~\citep{hammadyFrameworkConstructingEvaluating2021, yuIntegratingMixedReality}.
+As mixed reality (MR) technologies become more common in museum settings, AI-driven non-player characters (AI NPCs) offer new possibilities for guiding visitors through interactive, situated, and socially engaging cultural experiences. Rather than a single settled definition, MR is best understood as a spectrum of experiences that combine physical and virtual content along several dimensions—among them immersion, virtuality, and interaction~\citep{speicherWhatMixedReality2019}. Within cultural heritage, MR has been used to move the museum beyond the mere display of information toward emotive, immersive, and richly interactive encounters with artifacts, for example through head-worn displays that overlay computer-generated content onto real exhibits~\citep{hammadyFrameworkConstructingEvaluating2021, marti-testonMethodologyProduceAugmentedReality2021}. Empirical work further suggests that wearable MR systems can improve visitors' retention, comprehension, and situational interest relative to conventional mobile guides~\citep{chinApplyingWearableMRbased2024}. In parallel, AI-driven agents such as chatbots have been introduced into museum learning to provide adaptive, on-demand feedback and to sustain visitors' cognitive and emotional engagement~\citep{liangEffectAIbasedChatbot2024}. Bringing these threads together, AI-driven virtual guides can be embodied as conversational NPCs in MR environments, allowing visitors to interact with them while engaging with physical exhibits~\citep{hammadyFrameworkConstructingEvaluating2021, yuIntegratingMixedReality}.
 
 % Personality as a social design mechanism
-Beyond providing information, AI NPCs can be designed with distinct personality traits that shape how users perceive, attend to, and interact with them as social partners. The Big Five model, and extraversion in particular, has become a common organizing framework for endowing artificial agents with recognizable personalities~\citep{neffEvaluatingEffectGesture2010, ahmadFrameworkPersonalityCues2022}. \citet{neffEvaluatingEffectGesture2010} show that both verbal cues (such as language style and word choice) and non-verbal cues (such as gesture rate and movement) can be systematically varied so that users reliably perceive an agent as more introverted or extraverted, a range of cues that \citet{ahmadFrameworkPersonalityCues2022} later organize into a design framework. This work builds on the long-standing finding that people respond socially to machines: \citet{leeCanRobotsManifest2006} show that robots manifesting personality elicit social responses and a heightened sense of social presence. Imbuing conversational agents with personality has been shown to increase perceived humanness, social presence, and communication satisfaction, with extraverted agents often preferred, though introverted agents can elicit deeper user engagement in some settings~\citep{ahmadCommunicatingMachinesConversational2021, volkelUserPerceptionsExtraversion2022}. These effects extend across embodiments, from text chatbots and product-recommendation agents to humanoid robots used with older adults, and, more recently, to large language models that can be prompted to express consistent personality profiles~\citep{jinBirdsFeatherFlock2023, zeddaOlderAdultsUser2025, jiangPersonaLLMInvestigatingAbility2024}. Together, this literature positions personality not as a cosmetic feature but as a deliberate social design mechanism for shaping human--agent interaction.
+Beyond providing information, AI NPCs can be designed with distinct personality traits that shape how users perceive and interact with them as social partners. The Big Five model, particularly extraversion, has been widely used to characterize and manipulate personality in artificial agents~\citep{neffEvaluatingEffectGesture2010, ahmadFrameworkPersonalityCues2022}. Prior research suggests that agent personality can influence perceived humanness, social presence, communication satisfaction, and user engagement, with extraverted agents often eliciting more positive social responses~\citep{leeCanRobotsManifest2006, ahmadCommunicatingMachinesConversational2021, volkelUserPerceptionsExtraversion2022}. More recent work further demonstrates that personality traits can be expressed across different forms of artificial agents, including large language model-based conversational systems~\citep{jiangPersonaLLMInvestigatingAbility2024}. Together, these findings establish personality as an important social design mechanism in human--agent interaction.
 
 % From human--AI interaction to human--human--AI interaction
-Although prior work has often examined AI agents in one-to-one human--AI interaction, museum visits frequently occur in social settings where visitors experience exhibits together with companions. \citet{tolmieSupportingGroupInteractions2014} show through ethnographic study that visiting is fundamentally a social activity: group members continually coordinate their movement and attention, and engagement with an exhibit often ends prematurely because of the need to keep up with, summon, or attend to fellow visitors. Maintaining group coherence while still allowing individual engagement is therefore a central design challenge, and prior systems have addressed it by reconfiguring the social dynamics of the visit rather than directing individuals in isolation~\citep{foshSupportingGroupCoherence2016, foshGiftingPersonalInterpretations2014}. Collaborative and game-based designs likewise leverage the presence of companions to deepen engagement across a group of visitors~\citep{klopferMysteryMuseumCollaborative2005}. Yet most personality-focused agent research still evaluates dyadic human--agent exchanges, giving comparatively little attention to how an agent's social behavior plays out when several co-present people share the same agent~\citep{ahmadCommunicatingMachinesConversational2021, volkelUserPerceptionsExtraversion2022}. Because social presence and the quality of interaction depend heavily on context and on the configuration of the people involved, moving from human--AI to human--human--AI interaction raises new questions about how an AI NPC's personality shapes not only each visitor's experience but also the social dynamics between companions~\citep{ohSystematicReviewSocial2018, yuIntegratingMixedReality}.
+Although prior work has often examined AI agents in one-to-one human--AI interaction, museum visits frequently occur in social settings where visitors experience exhibits together with companions. \citet{tolmieSupportingGroupInteractions2014} show through ethnographic study that visiting is fundamentally a social activity: group members continually coordinate their movement and attention, and engagement with an exhibit often ends prematurely because of the need to keep up with, summon, or attend to fellow visitors. Maintaining group coherence while still allowing individual engagement is therefore a central design challenge, and prior systems have addressed it by reconfiguring the social dynamics of the visit rather than directing individuals in isolation~\citep{foshSupportingGroupCoherence2016, foshGiftingPersonalInterpretations2014}. Yet most personality-focused agent research still evaluates individually framed human--agent exchanges, giving comparatively little attention to how an agent's social behavior plays out when several co-present people share the same agent~\citep{ahmadCommunicatingMachinesConversational2021, volkelUserPerceptionsExtraversion2022}. This leaves open how personality cues operate in socially situated encounters, where social presence and interaction quality depend not only on the agent's behavior but also on the relationship and coordination between the visitors. Moving from human--AI to human--human--AI interaction therefore raises new questions about how an AI NPC's personality shapes not only each visitor's experience but also the social dynamics between companions~\citep{ohSystematicReviewSocial2018, yuIntegratingMixedReality}.
 
 % Research Objective
 Taken together, prior research suggests that personality is an important social design mechanism for shaping how users perceive and interact with AI agents. However, most existing studies have examined personality effects in dyadic human-AI settings, while museum visits are often socially situated experiences involving companions who jointly attend to, interpret, and coordinate around exhibits. This creates an important gap in understanding how an AI NPC's personality functions not only as a feature of individual human-AI interaction, but also as a factor that may shape collaborative engagement, visual attention, and interpersonal dynamics within visitor pairs.
 
-To address this gap, this research investigates how AI NPC personality influences users' perceptions and behaviors in MR museum experiences across both individual and dyadic interaction contexts. In particular, it examines how NPC personality, user--NPC personality similarity, and pair acquaintance jointly affect users' evaluations of the AI NPC, their visual-attention behavior, and their collaborative engagement during shared museum exploration.
+To address this gap, this research investigates how AI NPC personality influences users' perceptions and behaviors in MR museum experiences across both individual and dyadic interaction contexts. In particular, it examines personality-related differences in users' evaluations, visual-attention behavior, and collaborative engagement, and further investigates how these patterns are associated with user--NPC personality similarity and vary across pair-acquaintance conditions.
 
 To guide this investigation, we formulated five research questions addressing AI NPC personality effects, personality similarity, dyadic collaboration, and pair acquaintance as follow: 
 
@@ -191,7 +191,7 @@ To guide this investigation, we formulated five research questions addressing AI
 \end{itemize}
 
 % Overview of the study
-To address these research questions, we conducted a sequential multi-study investigation that progressively extended the interaction context from individual human--AI interaction to collaborative human--human--AI interaction. The research program consisted of an initial personality-manipulation study, an individual MR experiment, a dyadic pilot study, and a formal dyadic experiment. Rather than treating these studies as independent evaluations, the research was designed cumulatively: the personality manipulation was first validated, its effects were then examined in individual interaction, and the interaction context was subsequently extended to dyads to investigate whether these effects persisted or changed in the presence of another human partner.
+To address these research questions, we conducted a sequential multi-study investigation that progressively extended the interaction context from individual human--AI interaction to collaborative human--human--AI interaction. The research program consisted of an initial personality-manipulation study, an individual MR experiment, a dyadic pilot study, and a formal dyadic experiment. Across these studies, the personality manipulation was first validated, its effects were then examined in individual interaction, and the interaction context was subsequently extended to dyads to investigate whether these effects persisted or changed in the presence of another human partner.
 
 The first study validated whether the designed verbal and vocal cues produced perceptually distinguishable introverted and extroverted AI NPCs. Building on this validation, the single-user experiment examined the effects of NPC personality on users' subjective evaluations, interaction behavior, and visual attention, as well as the role of user--NPC personality similarity (RQ1--RQ2). We then introduced a second human participant through a dyadic pilot study, which was used to identify interaction, task-design, and personality-manipulation issues arising in a shared MR setting and to refine the system before formal evaluation. The subsequent dyadic experiment employed a mixed design in which NPC personality was manipulated within pairs and pair acquaintance was varied between acquainted and unacquainted pairs. This experiment examined personality effects in collaborative interaction, the role of pair acquaintance, and user--NPC personality similarity across social contexts (RQ3--RQ5).
 
@@ -353,9 +353,9 @@ The results showed that the introverted AI NPC received a lower overall extrover
 
 \begin{table}[t]
 \centering
-\caption{Wilcoxon test analysis results for the two AI NPCs.}
+\caption{Wilcoxon signed-rank test results for the two AI NPCs.}
 \label{tab:manipulation_check}
-\begin{tabular*}{\tblwidth}{@{}LCCCCCC@{}}
+\begin{tabular*}{\tblwidth}{@{}LCCCCCCC@{}}
 \toprule
 \textbf{Dimension} &
 \textbf{\begin{tabular}[c]{@{}c@{}}Introvert\\Mean (SD)\end{tabular}} &
@@ -363,36 +363,44 @@ The results showed that the introverted AI NPC received a lower overall extrover
 \textbf{\begin{tabular}[c]{@{}c@{}}Introvert\\Median\end{tabular}} &
 \textbf{\begin{tabular}[c]{@{}c@{}}Extrovert\\Median\end{tabular}} &
 \textbf{\begin{tabular}[c]{@{}c@{}}Wilcoxon\\Statistic\end{tabular}} &
-\textbf{$p$-value} \\
+\textbf{$p$-value} &
+\textbf{\begin{tabular}[c]{@{}c@{}}Effect size\\$r$\end{tabular}} \\
 \midrule
 Sociability
-& 2.775 (0.947)
-& 3.750 (1.177)
-& 2.600
-& 4.300
+& 2.775 (0.747)
+& 3.750 (0.473)
+& 2.500
+& 3.750
 & 4.0
-& $p < .001$ \\
+& $.00037$
+& $.95$ \\
 
 Assertiveness
-& 3.013 (0.422)
-& 4.488 (0.313)
-& 3.025
-& 4.575
+& 3.013 (1.322)
+& 4.488 (0.476)
+& 3.625
+& 4.625
 & 7.0
-& $p < .001$ \\
+& $.00096$
+& $.91$ \\
 
 Energy Level
-& 2.538 (0.529)
-& 4.488 (0.356)
-& 2.400
-& 4.625
+& 2.538 (1.089)
+& 4.488 (0.565)
+& 2.500
+& 4.750
 & 4.0
-& $p < .001$ \\
+& $.00016$
+& $.96$ \\
 \bottomrule
 \end{tabular*}
+\begin{minipage}{\tblwidth}
+\vspace{3pt}
+\footnotesize
+\end{minipage}
 \end{table}
 
-These results indicate that the combination of LLM prompting and TTS adjustments successfully produced distinguishable introverted and extroverted AI NPCs. The significant differences across sociability, assertiveness, and energy level provide strong support for H1. Our findings are consistent with \citet{serapio-garciaPersonalityTraitsLarge2023}, who demonstrated that extroversion can be manipulated through LLM-generated text, and further extend this approach by jointly manipulating the linguistic and vocal features of AI NPCs.
+These results indicate that the combination of LLM prompting and TTS adjustments successfully produced distinguishable introverted and extroverted AI NPCs. The significant differences across sociability, assertiveness, and energy level confirm the effectiveness of the personality manipulation. Our findings are consistent with \citet{serapio-garciaPersonalityTraitsLarge2023}, who demonstrated that extroversion can be manipulated through LLM-generated text, and further extend this approach by jointly manipulating the linguistic and vocal features of AI NPCs.
 
 \section{Lab Experiment: Effects of AI NPC Personality in Single-User Interaction}\label{sec:lab}
 
